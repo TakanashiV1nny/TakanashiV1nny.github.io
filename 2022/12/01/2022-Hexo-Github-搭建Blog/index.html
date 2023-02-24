@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>2022 Hexo &amp; Github 搭建Blog | Takanashi.V1nny</title>
+
+  
+  <meta name="author" content="Takanashi.V1nny">
+  
+
+  
+  <meta name="description" content="Takanashi.V1nny&#39;s Blog">
+  
+
+  
+  <meta name="keywords" content="Takanashi.V1nny Blog Write">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="2022 Hexo &amp; Github 搭建Blog"/>
+
+  <meta property="og:site_name" content="Takanashi.V1nny"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Takanashi.V1nny" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">Takanashi.V1nny</a>
+    </h1>
+    <p class="site-description"></p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>2022 Hexo &amp; Github 搭建Blog</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2022/12/01/2022-Hexo-Github-搭建Blog/" rel="bookmark">
+        <time class="entry-date published" datetime="2022-12-01T12:01:50.000Z">
+          2022-12-01
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>Hexo是一款著名的博客框架，其一向以简洁快速著称，我的博客就是以它为基础搭建的，而且全程不需要花一分钱<br>文字教程，但你一定看得懂的！</p>
+<blockquote>
+<p>需要准备</p>
+</blockquote>
+<ul>
+<li><input disabled="" type="checkbox"> 一台电脑（废话）</li>
+<li><input disabled="" type="checkbox"> node.js的环境</li>
+<li><input disabled="" type="checkbox"> 一个Github账号</li>
+<li><input disabled="" type="checkbox"> Git</li>
+<li><input checked="" disabled="" type="checkbox"> 一个聪明的大脑（我相信你一定有的）</li>
+</ul>
+<blockquote>
+<p>前期准备步骤</p>
+</blockquote>
+<p><strong>Node.js官网下载</strong><br><a target="_blank" rel="noopener" href="http://nodejs.cn/download/">Node.js</a><br>选择你所使用的系统和他相应的安装包。windows建议msi<br>安装好后打开终端输入</p>
+<pre><code>node -v
+</code></pre>
+<p>如果有版本号就说明安装成功</p>
+<p><strong>Git官网下载</strong><br><a target="_blank" rel="noopener" href="https://git-scm.com/">GIt</a></p>
+<p>准备好的话就可以开始搭建了</p>
+<blockquote>
+<p>搭建过程</p>
+</blockquote>
+<p><strong>新建博客文件夹</strong><br>在任何地方新建一个文件夹，名称随意，这里建议不要放在C盘，我的名称叫Blog，你也可以使用这个名字（随便起但你要记住）<br><strong>下载Hexo文件</strong><br>打开windows终端，cd到你的博客文件夹<br>输入</p>
+<pre><code>npm install hexo-cli -g
+</code></pre>
+<p>跑完命令后输入<code>hexo -v</code>检查是否安装成功，显示版本号即为成功<br>接着输入</p>
+<pre><code>hexo init
+</code></pre>
+<p>不出意外的话，最后一句话应该是“Start blogging with Hexo!”<br><del><em>如果没有的话，不出意外，应该是出意外了</em></del><br>如果你成功了，这时你的文件夹里应该会出现一堆文件<br>输入</p>
+<pre><code>hexo s
+</code></pre>
+<p>并打开浏览器访问</p>
+<pre><code>http://localhost:4000/
+</code></pre>
+<p>就可以看到你的博客在本地运行起来了，好好欣赏一下吧<br>欣赏完必须关闭它，不要急着关闭终端，按下<br><code>Ctrl</code>+<code>C</code><br>他就会关闭了<br><strong>修改配置文件</strong><br>现在咱们要让咱们的博客更花哨一点，如果你不喜欢花哨的，可以试试我这款主题：Hacker，简约好看<br><a target="_blank" rel="noopener" href="https://github.com/CodeDaraW/Hacker">Hacker主题的Github</a><br>下载好后拖入到你的博客文件夹&#x2F;theme中并解压到当前文件夹，给文件夹重命名为Hacker<br>回到博客文件夹，打开<code>_config.yml</code>文件，并找到theme:<br>把后面的主题名改为<code>Hacker</code>，保存并退出<br>打开终端cd到博客文件夹，输入</p>
+<pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo clean &amp;&amp; hexo s
+</code></pre>
+<p>并访问</p>
+<pre><code>http://localhost:4000/
+</code></pre>
+<p>如果主题样式发生改变那么恭喜你成功了<br>现在在终端按下<code>Ctrl</code>+<code>C</code>来停止本地访问<br>下面来更改博客的内容<br>打开<code>_config.yml</code>文件，同时对照以下列表修改内容</p>
+<p><code>title</code></p>
+<p>网站标题</p>
+<p><code>subtitle</code></p>
+<p>网站副标题</p>
+<p><code>description</code></p>
+<p>网站描述</p>
+<p><code>keywords</code></p>
+<p>网站的关键词。支持多个关键词。</p>
+<p><code>author</code></p>
+<p>您的名字</p>
+<p><code>language</code></p>
+<p>网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有  <code>zh-Hans</code>和  <code>zh-CN</code>。</p>
+<p><code>timezone</code></p>
+<p>网站时区。Hexo 默认使用您电脑的时区。请参考  <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">时区列表</a>  进行设置，如  <code>America/New_York</code>,  <code>Japan</code>, 和  <code>UTC</code>  。一般的，对于中国大陆地区可以使用  <code>Asia/Shanghai</code>。<br>更改好后保存退出，同样执行</p>
+<pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo clean &amp;&amp; hexo s
+</code></pre>
+<p>并访问</p>
+<pre><code>http://localhost:4000/
+</code></pre>
+<p>   但你一定要记住，执行完<code>hexo s</code>的命令后一定不要关闭终端，在你想停止本地访问的时候切到终端按下熟悉的<code>Ctrl</code>+<code>C</code><br>  <strong>上传到Github开启访问</strong><br>  用资源管理器打开你的博客文件夹并右键选择<code>Git bash here</code>，如果没有该选项，请检查你的git安装是否正确<br>  打开后输入</p>
+<pre><code>ssh-keygen -t rsa -C “你注册github时的邮箱”
+</code></pre>
+<p>按回车，出现内容再按回车，出现内容再按回车，出现内容再按回车，四次回车，好的<br>出现ssh的方框框就说明成功了<br>资源管理器打开<br>C:\用户（或者User）\你的用户名.ssh<br>在这个文件夹里找到一个名为<code>id.rsa.pub</code>的文件，不要找错了，注意看下右侧的时间，要和你生成key的时间相吻合。打开那个文件复制里面的全部内容<br>打开浏览器，github，登陆一下<br>点击右上角头像旁的小三角，选择<code>setting</code><br>在出现的页面左侧选择<code>SSH and GPG keys</code><br>点击右侧<code>New SSH Key</code><br>title随便起个名字，把你刚才复制的那一大长串字粘贴到下面的<code>key</code>栏<br>点击<code>add ssh key</code>保存即可<br>打开你的git bash，输入</p>
+<pre><code>ssh -T git@github.com
+</code></pre>
+<p>如果出现了你的github用户名说明绑定成功，可以进行下一步骤<br>打开github，新建一个仓库（不是吧，你不会连仓库都不会建吧？？）<br>起名为<code>你的github用户名.github.io</code><br>并开启生成README文件<br>选择public<br>创建仓库<br>下面进行仓库连接<br>复制你的仓库网址，打开本地博客文件夹里的<code>_config.yml</code><br>把最后一行的</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br></pre></td></tr></table></figure>
+<p>替换为</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: 你的仓库链接</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
+<p>保存并退出<br>打开windwos终端，cd到你的博客文件夹<br>输入</p>
+<pre><code>npm install hexo-deployer–git --save
+</code></pre>
+<p>或</p>
+<pre><code>cnpm install hexo-deployer-git --save
+</code></pre>
+<p>你可以挨个试试，第一个报错了就用第二个<br>完成后输入</p>
+<pre><code>hexo g
+</code></pre>
+<p>生成页面，再输入</p>
+<pre><code>hexo clean
+</code></pre>
+<p>然后</p>
+<pre><code>hexo d
+</code></pre>
+<p>他就开始向github上传文件了<br>你可以打开github看看你的仓库，如果里面出现一些文件就说明成功了<br>访问</p>
+<pre><code>https://你的github用户名.github.io
+</code></pre>
+<p>这就是你的博客了，成功！</p>
+<blockquote>
+<p>写作方法</p>
+</blockquote>
+<p>Hexo博客的文章撰写采取markdown格式，所以我们需要一个markdown编辑器，网上有很多，可以找找，我用的是<code>Stack Edit</code>，一款在线编辑器，他有下载到桌面的功能，可以满足我们的基础使用<br>打开windows终端，输入</p>
+<pre><code>hexo new &quot;你的新文章的标题&quot;
+</code></pre>
+<p>这样就新建了一个文章，打开</p>
+<pre><code>博客文件夹\source\_posts
+</code></pre>
+<p>里面就是存放文章的地方，你可以看到一个和你刚刚创建的文章同名的md文件，打开它开始编辑吧<br>编辑完成后保存退出，打开windows终端，输入</p>
+<pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s
+</code></pre>
+<p>访问</p>
+<pre><code>http://localhost:4000/
+</code></pre>
+<p>预览一下你的文章，确认无误后，再在终端输入</p>
+<pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo clean &amp;&amp; hexo d
+</code></pre>
+<p>等待一会你的文章就上传完毕了，打开</p>
+<pre><code>你的github用户名.github.io
+</code></pre>
+<p>即可看到你的文章<br>在文章里有一些内容可以更改</p>
+<ul>
+<li>title 标题</li>
+<li>date 日期</li>
+<li>tags 标签</li>
+<li>categories 分类</li>
+</ul>
+<blockquote>
+<p>页面细节添加</p>
+</blockquote>
+<p>我的博客顶端有主页，归档和关于的按钮，要想添加这些功能需要修改<code>_config.yml</code>文件<br>打开<code>博客文件夹\theme\你的主题文件夹</code>中的<code>_config.yml</code>文件<br>以Hacker主题为例<br>修改Hacker文件夹里的<br><code>_config.example.yml</code>为<code>_config.yml</code><br>打开该文件，在顶端替换掉menu包含的内容，替换为</p>
+<pre><code>menu:
+  Home: /
+  Archives: /archives
+  About: /about
+</code></pre>
+<p>保存退出，打开windows终端输入</p>
+<pre><code>hexo new page &quot;about&quot;
+</code></pre>
+<p>创建关于页面，打开<code>博客文件夹\source\about</code>并修改里面的<code>index.md</code><br>在里面写 关于 的内容<br>保存并退出</p>
+<pre><code>  hexo clean &amp;&amp; hexo g &amp;&amp; hexo s
+</code></pre>
+<p>预览下，确认无误后输入</p>
+<pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo clean &amp;&amp; hexo d
+</code></pre>
+<p>顶栏添加成功</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+      
+
+    <span class="post-categories">
+      <i class="icon-categories"></i>
+        <a href="/categories/Hexo/">Hexo</a>
+    </span>
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/Hexo/">Hexo</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+  
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2023 Takanashi.V1nny
+    
+  </p>
+</footer>
+    
+    
+  </div>
+</div>
+</body>
+</html>

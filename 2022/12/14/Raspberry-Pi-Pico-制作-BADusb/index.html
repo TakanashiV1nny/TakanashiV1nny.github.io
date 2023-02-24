@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Raspberry Pi Pico 制作 BADusb | Takanashi.V1nny</title>
+
+  
+  <meta name="author" content="Takanashi.V1nny">
+  
+
+  
+  <meta name="description" content="Takanashi.V1nny&#39;s Blog">
+  
+
+  
+  <meta name="keywords" content="Takanashi.V1nny Blog Write">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="Raspberry Pi Pico 制作 BADusb"/>
+
+  <meta property="og:site_name" content="Takanashi.V1nny"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Takanashi.V1nny" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">Takanashi.V1nny</a>
+    </h1>
+    <p class="site-description"></p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>Raspberry Pi Pico 制作 BADusb</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2022/12/14/Raspberry-Pi-Pico-制作-BADusb/" rel="bookmark">
+        <time class="entry-date published" datetime="2022-12-14T11:33:48.000Z">
+          2022-12-14
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>大家一定听说过BADusb这个词，通俗来讲，就是一个usb设备被植入恶意代码等等成为了嘿阔的工具，小到插入后立即执行恶意代码或者进行恶搞，大到可以瞬间瘫痪你的计算机并窃取密码，<br>当然咱们肯定不可能叫你做那种到了违法的地步的东西的，所以咱们今天以恶搞为主，利用pico板这个小玩意，教大家做一个无公害的<code>BADusb</code><br>其实他有没有害还是要取决于你在里面设置的预执行代码的</p>
+<blockquote>
+<p>需要准备 </p>
+</blockquote>
+<ul>
+<li>Raspberry Pi Pico （真的很便宜，帮焊接引脚的30r左右，不带引脚的20r左右）</li>
+<li>一台电脑</li>
+<li>数据线 （一定是要可以插进Pico板的线）</li>
+</ul>
+<blockquote>
+<p>烧录CircuitPython</p>
+</blockquote>
+<p>下载CircuitPython<br><a target="_blank" rel="noopener" href="https://downloads.circuitpython.org/bin/raspberry_pi_pico/en_US/adafruit-circuitpython-raspberry_pi_pico-en_US-7.3.3.uf2">CircuitPython</a><br>下载好后，按住pico板上的<code>BOOTSEL</code>按钮，一定要按住，按住的同时把pico用数据线和电脑连接，电脑没有识别到他之前都不要松手！<br>不出意外，你的电脑应该会把它识别为一个大容量存储设备<br>打开它，并把刚才下载的CircuitPython文件(是uf2后缀)的文件拖入到pico的文件夹里，这时pico会自动重启，表现为窗口突然关闭，等待一会，文件夹窗口又出现，里面多出几个文件，说明烧录成功</p>
+<blockquote>
+<p>为Pico安装HID库</p>
+</blockquote>
+<p>其实，这个Pico BADusb的原理就是利用HID，模拟人的键鼠输入来达到做某些事的目的，也就是说，任何你可以用键盘鼠标完成的事，他都可以干，只不过是合不合法的问题（好可怕哦）<br>下载HID库<br><a target="_blank" rel="noopener" href="https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases/download/20221214/adafruit-circuitpython-bundle-7.x-mpy-20221214.zip">HID库</a><br>下载好后解压，打开里面的<code>lib</code>目录找到<code>adafruit_hid</code>、<code>adafruit_debouncer.mpy</code>、<code>adafruit_ticks.mpy</code>和<code>asyncio</code>这四个东西，你不需要知道他们是什么，只需要把它们复制或剪切到pico的<code>lib</code>目录下，好的，完成了吗？</p>
+<blockquote>
+<p>为Pico导入执行Python文件</p>
+</blockquote>
+<p>下载文件包<br><a target="_blank" rel="noopener" href="https://github.com/dbisu/pico-ducky/archive/refs/heads/main.zip">文件包</a><br>解压他，并把里面的<code>duckyinpython.py</code>拖到pico的文件夹下，就是pico的根目录，拖动好后删除原来的<code>code.py</code>并把<code>duckyinpython.py</code>改名为<code>code.py</code><br>好的，现在你只差最后一步就可以完工了</p>
+<blockquote>
+<p>写入待执行文件</p>
+</blockquote>
+<p>打开任何编辑器开始编辑你的待执行文件吧，在编写好后意味着，一旦插入这个pico，他将执行那里面的所有代码<br>在编写前，先了解几个简单的语法<br><code>DELAY 毫秒</code> 延迟时间，可以用在两个命令的中间，后面的毫秒就是他要延迟的时间<br><code>GUI r</code> 相当于快捷键<code>Win</code>+<code>R</code><br><code>STRING 文本</code> 输入的文本，后面跟的字就是他会模拟键盘输入输入那些字符<br><code>ENTER</code> 按下回车键<br><code>CTRL</code> 按下CTRL键<br><code>字母</code> 按下某个字母（你指定）<br>这些是比较基础的<br>如果是ctrl组合的快捷键，那么就是<br><code>CTRL 快捷键的第二个键</code><br>这里面的关键字字符全部是大写<br>一行写一个<br>写好后保存名为<code>payload.dd</code><br>这里分享我写的一个简单的rickroll恶搞，具体就是运行cmd打开b站的网址</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">DELAY 20</span><br><span class="line">CTRL ESC</span><br><span class="line">DELAY 250</span><br><span class="line">STRING cmd</span><br><span class="line">DELAY 250</span><br><span class="line">ENTER</span><br><span class="line">ENTER</span><br><span class="line">DELAY 1500</span><br><span class="line">STRING start https://www.bilibili.com/video/BV1GJ411x7h7/?spm_id_from=333.337.search-card.all.click&amp;vd_source=1e8b094d8bdec0395a59bec11eeecc6a</span><br><span class="line">ENTER</span><br></pre></td></tr></table></figure>
+<p>翻译</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">等待20毫秒</span><br><span class="line">按下CTRL + ESC调出搜索窗口</span><br><span class="line">等待250毫秒</span><br><span class="line">输入 cmd</span><br><span class="line">回车</span><br><span class="line">回车</span><br><span class="line">等待1500毫秒</span><br><span class="line">输入 start https://www.bilibili.com/video/BV1GJ411x7h7/?spm_id_from=333.337.search-card.all.click&amp;vd_source=1e8b094d8bdec0395a59bec11eeecc6a</span><br><span class="line">回车</span><br></pre></td></tr></table></figure>
+<p>你也可以试试<br>保存为<code>payload.dd</code>后把它拖入pico的根目录，这时！！！这时你记住！！一定在拖进去并且确认他已经在里面的一瞬间，拔掉你的pico！！！以免他提前运行<br>好了<br>现在你的BADusb就制作完成了，把他连接到你的电脑试试吧！</p>
+<blockquote>
+<p>把pico恢复原样或者进行脚本编辑</p>
+</blockquote>
+<p>你肯定想过，一旦插上他就会以每秒几百甚至上千字的输入速度执行里面的命令，那么怎么重新编辑里面的脚本或者怎么恢复原样呢？<br>很简单<br>把他拔下来，按住<code>BOOTSEL</code>键再连接回去，和这篇文章开头的过程一样，这时，下载这个文件<br><a target="_blank" rel="noopener" href="https://cdn-learn.adafruit.com/assets/assets/000/099/419/original/flash_nuke.uf2?1613329170">恢复文件</a><br>下载好后，把他拖进pico根目录，它就会自动重启，恢复完成！</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+      
+
+    <span class="post-categories">
+      <i class="icon-categories"></i>
+        <a href="/categories/BADusb/">BADusb</a>
+    </span>
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/BADusb/">BADusb</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+  
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2023 Takanashi.V1nny
+    
+  </p>
+</footer>
+    
+    
+  </div>
+</div>
+</body>
+</html>
