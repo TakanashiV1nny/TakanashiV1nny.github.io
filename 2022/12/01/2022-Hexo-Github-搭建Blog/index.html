@@ -206,11 +206,7 @@
 <p>页面细节添加</p>
 </blockquote>
 <p>我的博客顶端有主页，归档和关于的按钮，要想添加这些功能需要修改<code>_config.yml</code>文件<br>打开<code>博客文件夹\theme\你的主题文件夹</code>中的<code>_config.yml</code>文件<br>以Hacker主题为例<br>修改Hacker文件夹里的<br><code>_config.example.yml</code>为<code>_config.yml</code><br>打开该文件，在顶端替换掉menu包含的内容，替换为</p>
-<pre><code>menu:
-  Home: /
-  Archives: /archives
-  About: /about
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">      Home: /</span><br><span class="line">      Archives: /archives</span><br><span class="line">      About: /about</span><br></pre></td></tr></table></figure>
 <p>保存退出，打开windows终端输入</p>
 <pre><code>hexo new page &quot;about&quot;
 </code></pre>

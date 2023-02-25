@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Takanashi.V1nny</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2023-02-24T13:04:49.543Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Takanashi.V1nny</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo文章内展开插件Demo</title>
+    <link href="http://example.com/2023/02/24/Hexo%E6%96%87%E7%AB%A0%E5%86%85%E5%B1%95%E5%BC%80%E6%8F%92%E4%BB%B6Demo/"/>
+    <id>http://example.com/2023/02/24/Hexo%E6%96%87%E7%AB%A0%E5%86%85%E5%B1%95%E5%BC%80%E6%8F%92%E4%BB%B6Demo/</id>
+    <published>2023-02-24T13:03:49.000Z</published>
+    <updated>2023-02-24T13:04:49.543Z</updated>
+    
+    <content type="html"><![CDATA[<details><summary>点击展开</summary><p>展开了<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</p></details>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;details&gt;&lt;summary&gt;点击展开&lt;/summary&gt;&lt;p&gt;展开了&lt;br&gt;1&lt;br&gt;2&lt;br&gt;3&lt;br&gt;4&lt;br&gt;5&lt;br&gt;6&lt;br&gt;7&lt;br&gt;8&lt;br&gt;9&lt;br&gt;10&lt;/p&gt;
+&lt;/details&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo文章加密Demo</title>
+    <link href="http://example.com/2023/02/24/Hexo%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86Demo/"/>
+    <id>http://example.com/2023/02/24/Hexo%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86Demo/</id>
+    <published>2023-02-24T12:55:28.000Z</published>
+    <updated>2023-02-24T12:56:32.516Z</updated>
+    
+    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="5a9b250bca09d9bb70f2171320fe19a0ce9bc6ec3335184db2d8e24b6d4a4fdd">043054a9e2b1570e8e69b4af24e5ac8d8020bc30468e951cac8987a9fdcc2392eed41edee9a4f89c3d1a36c19abf5c87234b8e26f089cc2a46f2c19dc22273ae7e9fead0d30489e2fdeebdc963ccdb8e85af0994ea82b5ba7e62cb408e99ab416fa81d2b2fab4098e4b022f760331ce8</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>鼠标指针？自制一个好不好！</title>
+    <link href="http://example.com/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/"/>
+    <id>http://example.com/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/</id>
+    <published>2023-02-24T12:35:18.000Z</published>
+    <updated>2023-02-24T12:43:28.240Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="需要准备"><a href="#需要准备" class="headerlink" title="需要准备"></a><strong>需要准备</strong></h2><ul><li><p>Icofx</p><p>  <a href="https://www.icofx.ro/files/icofxsetup.exe">Icofx下载</a></p></li><li><p>鼠标指针安装文件生成器</p><p>  <a href="https://wwts.lanzouf.com/iRaZM0lm6v3e">鼠标指针安装文件生成器</a>（密码：cngd）</p></li><li><p>电脑（废话）</p></li></ul><h2 id="绘制鼠标指针"><a href="#绘制鼠标指针" class="headerlink" title="绘制鼠标指针"></a><strong>绘制鼠标指针</strong></h2><p>打开<code>Icofx</code>工具，选择<code>New Cursor</code>，并点击<code>确定</code></p><img src="/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/1.png" class title="image"><p>然后开始画就好了</p><img src="/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/2.png" class title="image"><p>如果你不知道需要画哪些可以打开<code>鼠标指针安装文件生成器</code>，这里有参考</p><img src="/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/3.png" class title="image"><p>全部画好后在<code>Icofx</code>按<code>Ctrl</code>+<code>Shift</code>+<code>S</code>保存到一个文件夹，文件夹名最好是你所设计的鼠标指针的名字</p><blockquote><p>说个可怕的事，Icofx只是试用版，正版要💴的，但是你也可以找pj版</p></blockquote><h2 id="打包工程"><a href="#打包工程" class="headerlink" title="打包工程"></a><strong>打包工程</strong></h2><p>打开<code>鼠标指针安装文件生成器</code>，点击指针文件夹，选择你保存鼠标文件的文件夹即可</p><img src="/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/4.png" class title="image"><p>把对应功能的鼠标图片拖动到右边对应的框框里</p><img src="/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/5.png" class title="image"><p>取消勾选<code>打包成EXE文件</code>，并填写<code>文件夹名称</code>和<code>指针名称</code>，最后点击<code>生成打包文件</code></p><img src="/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/6.png" class title="image"><p>这时，返回你存储指针文件的文件夹内，指针的<code>inf</code>文件就在里面了，文件名可能是<code>AutoSetup</code>，如果不一样也没关系，可能是咱们的版本不一样，但是如果你是从我的网盘里下载的话应该版本都一样的，这时你应该找找自己的问题了</p><img src="/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/7.png" class title="image"><h2 id="安装方式"><a href="#安装方式" class="headerlink" title="安装方式"></a><strong>安装方式</strong></h2><p>直接右键inf文件选择安装即可，分享给别人只需要分享inf文件</p><blockquote><p>如果你是win11系统，右键后请选择显示更多选项，在点击安装</p></blockquote><h2 id="分享"><a href="#分享" class="headerlink" title="分享"></a><strong>分享</strong></h2><p>分享一款我正在使用的仿Macos的鼠标指针<br><a href="https://wwts.lanzouf.com/iV6dv0lml01g">MacOS指针</a><br>密码:2mpu</p>]]></content>
+    
+    
+    <summary type="html">自制自己的鼠标指针</summary>
+    
+    
+    
+    <category term="鼠标指针" scheme="http://example.com/categories/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88/"/>
+    
+    
+    <category term="鼠标指针" scheme="http://example.com/tags/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Raspberry Pi Pico 制作 BADusb</title>
+    <link href="http://example.com/2022/12/14/Raspberry-Pi-Pico-%E5%88%B6%E4%BD%9C-BADusb/"/>
+    <id>http://example.com/2022/12/14/Raspberry-Pi-Pico-%E5%88%B6%E4%BD%9C-BADusb/</id>
+    <published>2022-12-14T11:33:48.000Z</published>
+    <updated>2022-12-14T13:18:44.474Z</updated>
+    
+    <content type="html"><![CDATA[<p>大家一定听说过BADusb这个词，通俗来讲，就是一个usb设备被植入恶意代码等等成为了嘿阔的工具，小到插入后立即执行恶意代码或者进行恶搞，大到可以瞬间瘫痪你的计算机并窃取密码，<br>当然咱们肯定不可能叫你做那种到了违法的地步的东西的，所以咱们今天以恶搞为主，利用pico板这个小玩意，教大家做一个无公害的<code>BADusb</code><br>其实他有没有害还是要取决于你在里面设置的预执行代码的</p><blockquote><p>需要准备 </p></blockquote><ul><li>Raspberry Pi Pico （真的很便宜，帮焊接引脚的30r左右，不带引脚的20r左右）</li><li>一台电脑</li><li>数据线 （一定是要可以插进Pico板的线）</li></ul><blockquote><p>烧录CircuitPython</p></blockquote><p>下载CircuitPython<br><a href="https://downloads.circuitpython.org/bin/raspberry_pi_pico/en_US/adafruit-circuitpython-raspberry_pi_pico-en_US-7.3.3.uf2">CircuitPython</a><br>下载好后，按住pico板上的<code>BOOTSEL</code>按钮，一定要按住，按住的同时把pico用数据线和电脑连接，电脑没有识别到他之前都不要松手！<br>不出意外，你的电脑应该会把它识别为一个大容量存储设备<br>打开它，并把刚才下载的CircuitPython文件(是uf2后缀)的文件拖入到pico的文件夹里，这时pico会自动重启，表现为窗口突然关闭，等待一会，文件夹窗口又出现，里面多出几个文件，说明烧录成功</p><blockquote><p>为Pico安装HID库</p></blockquote><p>其实，这个Pico BADusb的原理就是利用HID，模拟人的键鼠输入来达到做某些事的目的，也就是说，任何你可以用键盘鼠标完成的事，他都可以干，只不过是合不合法的问题（好可怕哦）<br>下载HID库<br><a href="https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases/download/20221214/adafruit-circuitpython-bundle-7.x-mpy-20221214.zip">HID库</a><br>下载好后解压，打开里面的<code>lib</code>目录找到<code>adafruit_hid</code>、<code>adafruit_debouncer.mpy</code>、<code>adafruit_ticks.mpy</code>和<code>asyncio</code>这四个东西，你不需要知道他们是什么，只需要把它们复制或剪切到pico的<code>lib</code>目录下，好的，完成了吗？</p><blockquote><p>为Pico导入执行Python文件</p></blockquote><p>下载文件包<br><a href="https://github.com/dbisu/pico-ducky/archive/refs/heads/main.zip">文件包</a><br>解压他，并把里面的<code>duckyinpython.py</code>拖到pico的文件夹下，就是pico的根目录，拖动好后删除原来的<code>code.py</code>并把<code>duckyinpython.py</code>改名为<code>code.py</code><br>好的，现在你只差最后一步就可以完工了</p><blockquote><p>写入待执行文件</p></blockquote><p>打开任何编辑器开始编辑你的待执行文件吧，在编写好后意味着，一旦插入这个pico，他将执行那里面的所有代码<br>在编写前，先了解几个简单的语法<br><code>DELAY 毫秒</code> 延迟时间，可以用在两个命令的中间，后面的毫秒就是他要延迟的时间<br><code>GUI r</code> 相当于快捷键<code>Win</code>+<code>R</code><br><code>STRING 文本</code> 输入的文本，后面跟的字就是他会模拟键盘输入输入那些字符<br><code>ENTER</code> 按下回车键<br><code>CTRL</code> 按下CTRL键<br><code>字母</code> 按下某个字母（你指定）<br>这些是比较基础的<br>如果是ctrl组合的快捷键，那么就是<br><code>CTRL 快捷键的第二个键</code><br>这里面的关键字字符全部是大写<br>一行写一个<br>写好后保存名为<code>payload.dd</code><br>这里分享我写的一个简单的rickroll恶搞，具体就是运行cmd打开b站的网址</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">DELAY 20</span><br><span class="line">CTRL ESC</span><br><span class="line">DELAY 250</span><br><span class="line">STRING cmd</span><br><span class="line">DELAY 250</span><br><span class="line">ENTER</span><br><span class="line">ENTER</span><br><span class="line">DELAY 1500</span><br><span class="line">STRING start https://www.bilibili.com/video/BV1GJ411x7h7/?spm_id_from=333.337.search-card.all.click&amp;vd_source=1e8b094d8bdec0395a59bec11eeecc6a</span><br><span class="line">ENTER</span><br></pre></td></tr></table></figure><p>翻译</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">等待20毫秒</span><br><span class="line">按下CTRL + ESC调出搜索窗口</span><br><span class="line">等待250毫秒</span><br><span class="line">输入 cmd</span><br><span class="line">回车</span><br><span class="line">回车</span><br><span class="line">等待1500毫秒</span><br><span class="line">输入 start https://www.bilibili.com/video/BV1GJ411x7h7/?spm_id_from=333.337.search-card.all.click&amp;vd_source=1e8b094d8bdec0395a59bec11eeecc6a</span><br><span class="line">回车</span><br></pre></td></tr></table></figure><p>你也可以试试<br>保存为<code>payload.dd</code>后把它拖入pico的根目录，这时！！！这时你记住！！一定在拖进去并且确认他已经在里面的一瞬间，拔掉你的pico！！！以免他提前运行<br>好了<br>现在你的BADusb就制作完成了，把他连接到你的电脑试试吧！</p><blockquote><p>把pico恢复原样或者进行脚本编辑</p></blockquote><p>你肯定想过，一旦插上他就会以每秒几百甚至上千字的输入速度执行里面的命令，那么怎么重新编辑里面的脚本或者怎么恢复原样呢？<br>很简单<br>把他拔下来，按住<code>BOOTSEL</code>键再连接回去，和这篇文章开头的过程一样，这时，下载这个文件<br><a href="https://cdn-learn.adafruit.com/assets/assets/000/099/419/original/flash_nuke.uf2?1613329170">恢复文件</a><br>下载好后，把他拖进pico根目录，它就会自动重启，恢复完成！</p>]]></content>
+    
+    
+    <summary type="html">用你手边仅仅30元左右的Raspberry Pi Pico制作一个BADusb，简单且效果完全不输hak5的橡皮鸭！</summary>
+    
+    
+    
+    <category term="BADusb" scheme="http://example.com/categories/BADusb/"/>
+    
+    
+    <category term="BADusb" scheme="http://example.com/tags/BADusb/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>追加内容 JohnTheRipper的windows版下载及使用</title>
+    <link href="http://example.com/2022/12/14/%E8%BF%BD%E5%8A%A0%E5%86%85%E5%AE%B9-JohnTheRipper%E7%9A%84windows%E7%89%88%E4%B8%8B%E8%BD%BD%E5%8F%8A%E4%BD%BF%E7%94%A8/"/>
+    <id>http://example.com/2022/12/14/%E8%BF%BD%E5%8A%A0%E5%86%85%E5%AE%B9-JohnTheRipper%E7%9A%84windows%E7%89%88%E4%B8%8B%E8%BD%BD%E5%8F%8A%E4%BD%BF%E7%94%A8/</id>
+    <published>2022-12-14T01:54:36.000Z</published>
+    <updated>2022-12-14T02:23:26.353Z</updated>
+    
+    <content type="html"><![CDATA[<p>有的人可能没有kali机器啊，今天补一篇教大家用windows下载john破解zip</p><blockquote><p>需要准备</p></blockquote><ul><li>Windows</li><li>JohnTheRipper的其他系统版本</li><li>一个待破解的zip包</li></ul><p>首先需要下载你系统对应的版本<br><a href="https://www.openwall.com/john/">John官网</a><br>你可以在这里找到对应版本，但是不要下载john，要下载john的jumbo版，这个版本貌似是社区开发，里面包含了许多破解其他密码的模块插件等<br><a href="https://www.openwall.com/john/k/john-1.9.0-jumbo-1-win64.zip">Win64</a><br><a href="https://www.openwall.com/john/k/john-1.9.0-jumbo-1-win32.zip">Win32</a><br>下载好后应该是一个zip包，解压他，把它放到你能找到的地方，这里建议<br><code>最好不要放在桌面</code><br>可以放在D:盘<br>解压他到一个文件夹，这个文件夹命名为<code>john</code></p><blockquote><p>开始破解</p></blockquote><p>这里需要停一下，如果你没看过我写的那篇kali破解的教程，请务必去看一下，因为破解过程和kali没什么区别<br><a href="https://v1nnyawa.github.io/2022/12/13/John-The-Ripper-Crunch-%E7%A0%B4%E8%A7%A3zip%E5%AF%86%E7%A0%81/">Kali破解zip包教程</a><br>好的，在你看完那篇教程之后可以开始使用Windows破解了<br>把你待破解的<code>zip</code>包拖到john文件夹的<code>run</code>目录下，那里面有很多文件，所以在拖动前请给你的zip包起一个显眼的名字，如果你能找到，不起也可以<br>右键打开终端<br>输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zip2john.exe 你的zip包名 &gt; 解析后的hash文件名.hash</span><br></pre></td></tr></table></figure><p>这里你会发现，其实和kali没啥区别，只是在zip2john后加上<code>.exe</code>而已<br>执行后会在<code>run</code>目录生成一个和你输入的解析后的hash文件名同名的文件，那就是存储该zip包hash值的文件<br>输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">john.exe 解析后的hash文件名.hash</span><br></pre></td></tr></table></figure><p>等待一会，密码应该可以出来（弱密码的情况下）<br>密码强一点的同理，和在kali一样，需要一个强大的字典，你也可以通过安装<code>crunch</code>来达到生成字典的目的，引用字典的方法和kali也一样，这里不过多赘述</p>]]></content>
+    
+    
+    <summary type="html">追加内容，没有kali也可以破解zip密码</summary>
+    
+    
+    
+    <category term="JohnTheRipper" scheme="http://example.com/categories/JohnTheRipper/"/>
+    
+    
+    <category term="JohnTheRipper" scheme="http://example.com/tags/JohnTheRipper/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>John The Ripper &amp;&amp; Crunch 破解zip密码</title>
+    <link href="http://example.com/2022/12/13/John-The-Ripper-Crunch-%E7%A0%B4%E8%A7%A3zip%E5%AF%86%E7%A0%81/"/>
+    <id>http://example.com/2022/12/13/John-The-Ripper-Crunch-%E7%A0%B4%E8%A7%A3zip%E5%AF%86%E7%A0%81/</id>
+    <published>2022-12-13T05:22:03.000Z</published>
+    <updated>2022-12-13T08:33:12.478Z</updated>
+    
+    <content type="html"><![CDATA[<p>相信大家一定遇到过好不容易下载到的非常棒的项目源码等资源，想立刻部署来玩一玩，可是源码需要密码才能解压的这种情况，不用慌，今天教你怎么破解它<br>纯文字教程</p><blockquote><p>需要准备</p></blockquote><ul><li>Kali（物理机或虚拟机都可以）</li><li>John The Ripper和Zip2john模块</li><li>一个待破解的zip压缩包</li><li>Crunch</li></ul><p>Kali Linux是基于Debian的Linux发行版， 设计用于数字取证操作系统，并且预装了许多渗透测试软件，John和Crunch就是其中的两个小工具，主要用于密码的爆破，zip2john是john的zip破解模块，也是kali自带的，无需手动安装</p><blockquote><p>破解过程</p></blockquote><p>将你要破解的zip压缩包放到一个方便你找到的地方<br>并打开终端cd到该目录，我把它放在了桌面，我建议你也这么做，那么就直接右键桌面选择在此处打开终端即可</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">┌──(v1nny㉿v1nny)-[~/桌面]</span><br><span class="line">└─$ ls</span><br><span class="line">code.desktop  Pycharm.desktop  rockyou.txt  test.zip</span><br><span class="line">                                                              </span><br><span class="line">┌──(v1nny㉿v1nny)-[~/桌面]</span><br><span class="line">└─$ </span><br><span class="line"></span><br></pre></td></tr></table></figure><p>这个<code>test.zip</code>就是我们待破解的压缩包，他的密码已经提前进行了设置，这个密码我也不知道，是我闭上眼随便写的，下面我们对它进行破解操作</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">──(v1nny㉿v1nny)-[~/桌面]</span><br><span class="line">└─$ zip2john test.zip &gt; test.hash</span><br><span class="line">ver 1.0 test.zip/test/ is not encrypted, or stored with non-handled compression type</span><br><span class="line">                                                              </span><br><span class="line">┌──(v1nny㉿v1nny)-[~/桌面]</span><br><span class="line">└─$ ls</span><br><span class="line">code.desktop     rockyou.txt  test.zip</span><br><span class="line">Pycharm.desktop  test.hash</span><br></pre></td></tr></table></figure><p>输入<br><code>zip2john 待破解的zip文件名 &gt; 生成hash值后存入的文件名</code><br>这个hash值得存放文件得后缀你可以写<code>hash</code>或<code>txt</code><br>回车后会在桌面生成一个与你输入同名的<code>xxx.hash</code>文件，那里面就是这个zip的哈希值了<br>你可以输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat hash文件名.hash</span><br></pre></td></tr></table></figure><p>来查看内容是否正确，正不正确咱们光看也看不出来，你只需要看看里面有没有东西就可以</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">┌──(v1nny㉿v1nny)-[~/桌面]</span><br><span class="line">└─$ cat test.hash </span><br><span class="line">test.zip/test/test.txt:$zip2$*0*3*0*f8b779326ab33928aabc35732200a01e*1663*41*9845267a7d8c5dbf725ba89bfd85219c7163539471ddfcd21ecfd1dd9463ac258395fb68e1cc4272f5d22b253652c17db7c0cbe420d581f8095fd3bedba5346b0a*dbcd543a497351da6218*$/zip2$:test/test.txt:test.zip:test.zip</span><br></pre></td></tr></table></figure><p>成功录入的效果↑<br>这事就可以开始正式的破解了<br>输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">john 你的hash文件名</span><br></pre></td></tr></table></figure><p>即可进行破解，现在他进行字典爆破的字典在</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/share/john/password.lst</span><br></pre></td></tr></table></figure><p>的位置，这是john的默认字典<br>但是这种直接输入john的方法只适合破解弱密码，如果是复杂一点或者长一点的可能就解不出来了</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">┌──(v1nny㉿v1nny)-[~/桌面]</span><br><span class="line">└─$ john test.hash </span><br><span class="line">Using default input encoding: UTF-8</span><br><span class="line">Loaded 1 password hash (ZIP, WinZip [PBKDF2-SHA1 256/256 AVX2 8x])</span><br><span class="line">Cost 1 (HMAC size) is 65 for all loaded hashes</span><br><span class="line">Will run 4 OpenMP threads</span><br><span class="line">Proceeding with single, rules:Single</span><br><span class="line">Press &#x27;q&#x27; or Ctrl-C to abort, almost any other key for status</span><br><span class="line">Almost done: Processing the remaining buffered candidate passwords, if any.</span><br><span class="line">Proceeding with wordlist:/usr/share/john/password.lst</span><br><span class="line">Proceeding with incremental:ASCII</span><br></pre></td></tr></table></figure><p>比如我的这个就有点复杂，不过没关系<br>现在咱们就需要用到<code>Crunch</code>这个工具了，他准确来说应该是一个字典生成工具，可以根据你的需求进行完全的自定义字典，这里如何生成不多赘述，之讲一讲纯数字密码字典的生成<br>在终端输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">crunch 起始的数字位数 结束的数字位数 需要用到的数字 -o 生成后的字典名.txt</span><br></pre></td></tr></table></figure><p>例如，我不知道我设置的密码是什么，但我记得大概是7-8位的数字，我们可以输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">crunch 7 8 0123456789 -o pwd.txt</span><br></pre></td></tr></table></figure><p>那么返回结果是</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">┌──(v1nny㉿v1nny)-[~/桌面]</span><br><span class="line">└─$ crunch 7 8 0123456789 -o pwd.txt </span><br><span class="line">Crunch will now generate the following amount of data: 980000000 bytes</span><br><span class="line">934 MB</span><br><span class="line">0 GB</span><br><span class="line">0 TB</span><br><span class="line">0 PB</span><br><span class="line">Crunch will now generate the following number of lines: 110000000 </span><br><span class="line"></span><br><span class="line">crunch:  25% completed generating output</span><br><span class="line"></span><br><span class="line">crunch:  48% completed generating output</span><br><span class="line"></span><br><span class="line">crunch:  75% completed generating output</span><br><span class="line"></span><br><span class="line">crunch:  97% completed generating output</span><br><span class="line"></span><br><span class="line">crunch: 100% completed generating output</span><br><span class="line">                                                                </span><br><span class="line">┌──(v1nny㉿v1nny)-[~/桌面]</span><br><span class="line">└─$ l </span><br><span class="line">code.desktop*  Pycharm.desktop*  test.hash</span><br><span class="line">pwd.txt        rockyou.txt*      test.zip*</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>这里的pwd.txt就是生成的字典了，简单解读一下</p><p>crunch 不用多说是自动这个工具<br>7 是起始位数，注意，这里是位数，不是起始数<br>8 结束位数<br>0123456789 字典内密码的组成，全部是用这些数字组成的<br>-o 将密码保存到指定文件的参数<br>pwd.txt 最后生成的字典名</p><p>切记，如果你知道密码位数的话一定把范围缩小到位数里，不要从1开始生成，不然一个小时也生成不完<br>生成完字典后我们要引用字典进行爆破了<br>输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">John --wordlist=你的字典名 你的hash值存储文件名</span><br></pre></td></tr></table></figure><p>执行即可</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">┌──(v1nny㉿v1nny)-[~/桌面]</span><br><span class="line">└─$ john --wordlist=pwd.txt test.hash </span><br><span class="line">Using default input encoding: UTF-8</span><br><span class="line">Loaded 1 password hash (ZIP, WinZip [PBKDF2-SHA1 256/256 AVX2 8x])</span><br><span class="line">Cost 1 (HMAC size) is 35 for all loaded hashes</span><br><span class="line">Will run 4 OpenMP threads</span><br><span class="line">Press &#x27;q&#x27; or Ctrl-C to abort, almost any other key for status</span><br><span class="line">1598526          (test.zip/test/test.txt)     </span><br><span class="line">1g 0:00:00:37 DONE (2022-12-13 16:00) 0.02698g/s 43325p/s 43325c/s 43325C/s 1597440..1605631</span><br><span class="line">Use the &quot;--show&quot; option to display all of the cracked passwords reliably</span><br><span class="line">Session completed.</span><br></pre></td></tr></table></figure><p>好的密码已经爆破出来了，是<code>1598526</code>，在你的终端上会以黄色字显示出来<br>使用此密码解压后，里面的东西也没有损坏，非常完美<br>如果这些字典都不符合你的要求，你可以在桌面的<code>应用程序</code>处，搜索<code>wordlists</code>，找到同名程序，点击它即可显示出你的kali中的所有内置字典，信息量非常巨大，值得一试<br>如果上述所有方法还是不能成功爆破，那么就请放弃吧。。。</p><blockquote><p>给大家留一个小练习</p></blockquote><p><a href="https://wwts.lanzouf.com/iVXim0ikog4d">小练习</a></p>]]></content>
+    
+    
+    <summary type="html">下载到的源码等资源需要密码才能解压怎么办？ 欸，我这里有一台Kali！</summary>
+    
+    
+    
+    <category term="Kali" scheme="http://example.com/categories/Kali/"/>
+    
+    
+    <category term="Kali" scheme="http://example.com/tags/Kali/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Photoshop无缝换脸，有手就行</title>
+    <link href="http://example.com/2022/12/05/Photoshop%E6%97%A0%E7%BC%9D%E6%8D%A2%E8%84%B8%EF%BC%8C%E6%9C%89%E6%89%8B%E5%B0%B1%E8%A1%8C/"/>
+    <id>http://example.com/2022/12/05/Photoshop%E6%97%A0%E7%BC%9D%E6%8D%A2%E8%84%B8%EF%BC%8C%E6%9C%89%E6%89%8B%E5%B0%B1%E8%A1%8C/</id>
+    <published>2022-12-05T02:34:28.000Z</published>
+    <updated>2022-12-05T05:27:12.474Z</updated>
+    
+    <content type="html"><![CDATA[<p>不久前比较喜欢折腾Ps，最喜欢的玩法自然就是换脸了<br><del>我甚至因为恶搞同学被拉黑了55555</del><br>方法简单，老样子，纯文字你也可以看懂的！</p><blockquote><p>需要准备</p></blockquote><ul><li>电脑（废话）</li><li>Photoshop（版本别太老就行）<br>网上有很多ρj，怕不安全的话可以去pdd弄一个，但最好还是支持正版（不是恰饭啊）</li><li>至少两张图片，不是人也行（bushi</li></ul><blockquote><p>具体过程</p></blockquote><p>打开Ps，导入两张图片<br>这里定<code>换的脸</code>为<code>A</code>   <code>被换脸的人</code>为<code>B</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/python3</span><br><span class="line">A = ”换的脸&quot;</span><br><span class="line">B = “被换脸的人“</span><br></pre></td></tr></table></figure><p>差不多就这么个意思，这样只是方便接下来的教学<br>好的，导入好图片以后，切换到<code>A</code>图<br>是用<code>钢笔工具</code>扣出脸，使用钢笔工具左键点击，在脸上构建几个描点，记住，这里扣的是脸，不是整个头，然后连接描点，在弯曲的地方左键，并按住<code>Ctrl</code>键，上下拉动鼠标，你会发现那条线动了起来，把他调整到可以贴和脸的位置<br>如果你觉得钢笔工具麻烦的话可以直接用<code>套索工具</code>左键，像画画一样圈一下就好<br>全好后按下<code>Enter</code>，然后会出现闪烁的虚线，<code>Ctrl</code>+<code>J</code>复制，并在工具栏选择<code>移动工具</code>，拖动刚才的选区到<code>B</code>图（上边会有两个任务窗口，拖到另一个的位置等待一会，等切换到<code>B</code>图在松手）<br><code>Ctrl</code>+<code>T</code>调整大小和位置</p><hr><p>在右下角按住<code>Ctrl</code>键并点击<code>图层2</code>，这时会出现闪烁的虚线，点击<code>图层2</code>左侧的小眼睛，将其关闭，点击上方栏中的<code>选择（S）</code>并选择<code>修改</code>→<code>收缩</code>，输入<code>5</code>点击确定<br>点击右下角<code>图层2</code>左侧的小眼睛，打开它，并双击<code>图层1</code>将其解锁，按住<code>Ctrl</code>键同时选择<code>图层1</code>和<code>图层2</code>点击上方栏中的<code>编辑</code>→<code>自动混合图层</code>，勾选全景图、无缝色调和颜色、内容识别填充透明区域，点击<code>确定</code><br>完成！<br>导出看看吧</p>]]></content>
+    
+    
+    <summary type="html">这人怎么长得这么奇怪啊</summary>
+    
+    
+    
+    <category term="photoshop" scheme="http://example.com/categories/photoshop/"/>
+    
+    
+    <category term="photoshop" scheme="http://example.com/tags/photoshop/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2022 Hexo &amp; Github 搭建Blog</title>
+    <link href="http://example.com/2022/12/01/2022-Hexo-Github-%E6%90%AD%E5%BB%BABlog/"/>
+    <id>http://example.com/2022/12/01/2022-Hexo-Github-%E6%90%AD%E5%BB%BABlog/</id>
+    <published>2022-12-01T12:01:50.000Z</published>
+    <updated>2023-02-25T11:47:27.142Z</updated>
+    
+    <content type="html"><![CDATA[<p>Hexo是一款著名的博客框架，其一向以简洁快速著称，我的博客就是以它为基础搭建的，而且全程不需要花一分钱<br>文字教程，但你一定看得懂的！</p><blockquote><p>需要准备</p></blockquote><ul><li><input disabled type="checkbox"> 一台电脑（废话）</li><li><input disabled type="checkbox"> node.js的环境</li><li><input disabled type="checkbox"> 一个Github账号</li><li><input disabled type="checkbox"> Git</li><li><input checked disabled type="checkbox"> 一个聪明的大脑（我相信你一定有的）</li></ul><blockquote><p>前期准备步骤</p></blockquote><p><strong>Node.js官网下载</strong><br><a href="http://nodejs.cn/download/">Node.js</a><br>选择你所使用的系统和他相应的安装包。windows建议msi<br>安装好后打开终端输入</p><pre><code>node -v</code></pre><p>如果有版本号就说明安装成功</p><p><strong>Git官网下载</strong><br><a href="https://git-scm.com/">GIt</a></p><p>准备好的话就可以开始搭建了</p><blockquote><p>搭建过程</p></blockquote><p><strong>新建博客文件夹</strong><br>在任何地方新建一个文件夹，名称随意，这里建议不要放在C盘，我的名称叫Blog，你也可以使用这个名字（随便起但你要记住）<br><strong>下载Hexo文件</strong><br>打开windows终端，cd到你的博客文件夹<br>输入</p><pre><code>npm install hexo-cli -g</code></pre><p>跑完命令后输入<code>hexo -v</code>检查是否安装成功，显示版本号即为成功<br>接着输入</p><pre><code>hexo init</code></pre><p>不出意外的话，最后一句话应该是“Start blogging with Hexo!”<br><del><em>如果没有的话，不出意外，应该是出意外了</em></del><br>如果你成功了，这时你的文件夹里应该会出现一堆文件<br>输入</p><pre><code>hexo s</code></pre><p>并打开浏览器访问</p><pre><code>http://localhost:4000/</code></pre><p>就可以看到你的博客在本地运行起来了，好好欣赏一下吧<br>欣赏完必须关闭它，不要急着关闭终端，按下<br><code>Ctrl</code>+<code>C</code><br>他就会关闭了<br><strong>修改配置文件</strong><br>现在咱们要让咱们的博客更花哨一点，如果你不喜欢花哨的，可以试试我这款主题：Hacker，简约好看<br><a href="https://github.com/CodeDaraW/Hacker">Hacker主题的Github</a><br>下载好后拖入到你的博客文件夹&#x2F;theme中并解压到当前文件夹，给文件夹重命名为Hacker<br>回到博客文件夹，打开<code>_config.yml</code>文件，并找到theme:<br>把后面的主题名改为<code>Hacker</code>，保存并退出<br>打开终端cd到博客文件夹，输入</p><pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo clean &amp;&amp; hexo s</code></pre><p>并访问</p><pre><code>http://localhost:4000/</code></pre><p>如果主题样式发生改变那么恭喜你成功了<br>现在在终端按下<code>Ctrl</code>+<code>C</code>来停止本地访问<br>下面来更改博客的内容<br>打开<code>_config.yml</code>文件，同时对照以下列表修改内容</p><p><code>title</code></p><p>网站标题</p><p><code>subtitle</code></p><p>网站副标题</p><p><code>description</code></p><p>网站描述</p><p><code>keywords</code></p><p>网站的关键词。支持多个关键词。</p><p><code>author</code></p><p>您的名字</p><p><code>language</code></p><p>网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有  <code>zh-Hans</code>和  <code>zh-CN</code>。</p><p><code>timezone</code></p><p>网站时区。Hexo 默认使用您电脑的时区。请参考  <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">时区列表</a>  进行设置，如  <code>America/New_York</code>,  <code>Japan</code>, 和  <code>UTC</code>  。一般的，对于中国大陆地区可以使用  <code>Asia/Shanghai</code>。<br>更改好后保存退出，同样执行</p><pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo clean &amp;&amp; hexo s</code></pre><p>并访问</p><pre><code>http://localhost:4000/</code></pre><p>   但你一定要记住，执行完<code>hexo s</code>的命令后一定不要关闭终端，在你想停止本地访问的时候切到终端按下熟悉的<code>Ctrl</code>+<code>C</code><br>  <strong>上传到Github开启访问</strong><br>  用资源管理器打开你的博客文件夹并右键选择<code>Git bash here</code>，如果没有该选项，请检查你的git安装是否正确<br>  打开后输入</p><pre><code>ssh-keygen -t rsa -C “你注册github时的邮箱”</code></pre><p>按回车，出现内容再按回车，出现内容再按回车，出现内容再按回车，四次回车，好的<br>出现ssh的方框框就说明成功了<br>资源管理器打开<br>C:\用户（或者User）\你的用户名.ssh<br>在这个文件夹里找到一个名为<code>id.rsa.pub</code>的文件，不要找错了，注意看下右侧的时间，要和你生成key的时间相吻合。打开那个文件复制里面的全部内容<br>打开浏览器，github，登陆一下<br>点击右上角头像旁的小三角，选择<code>setting</code><br>在出现的页面左侧选择<code>SSH and GPG keys</code><br>点击右侧<code>New SSH Key</code><br>title随便起个名字，把你刚才复制的那一大长串字粘贴到下面的<code>key</code>栏<br>点击<code>add ssh key</code>保存即可<br>打开你的git bash，输入</p><pre><code>ssh -T git@github.com</code></pre><p>如果出现了你的github用户名说明绑定成功，可以进行下一步骤<br>打开github，新建一个仓库（不是吧，你不会连仓库都不会建吧？？）<br>起名为<code>你的github用户名.github.io</code><br>并开启生成README文件<br>选择public<br>创建仓库<br>下面进行仓库连接<br>复制你的仓库网址，打开本地博客文件夹里的<code>_config.yml</code><br>把最后一行的</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br></pre></td></tr></table></figure><p>替换为</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: 你的仓库链接</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure><p>保存并退出<br>打开windwos终端，cd到你的博客文件夹<br>输入</p><pre><code>npm install hexo-deployer–git --save</code></pre><p>或</p><pre><code>cnpm install hexo-deployer-git --save</code></pre><p>你可以挨个试试，第一个报错了就用第二个<br>完成后输入</p><pre><code>hexo g</code></pre><p>生成页面，再输入</p><pre><code>hexo clean</code></pre><p>然后</p><pre><code>hexo d</code></pre><p>他就开始向github上传文件了<br>你可以打开github看看你的仓库，如果里面出现一些文件就说明成功了<br>访问</p><pre><code>https://你的github用户名.github.io</code></pre><p>这就是你的博客了，成功！</p><blockquote><p>写作方法</p></blockquote><p>Hexo博客的文章撰写采取markdown格式，所以我们需要一个markdown编辑器，网上有很多，可以找找，我用的是<code>Stack Edit</code>，一款在线编辑器，他有下载到桌面的功能，可以满足我们的基础使用<br>打开windows终端，输入</p><pre><code>hexo new &quot;你的新文章的标题&quot;</code></pre><p>这样就新建了一个文章，打开</p><pre><code>博客文件夹\source\_posts</code></pre><p>里面就是存放文章的地方，你可以看到一个和你刚刚创建的文章同名的md文件，打开它开始编辑吧<br>编辑完成后保存退出，打开windows终端，输入</p><pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code></pre><p>访问</p><pre><code>http://localhost:4000/</code></pre><p>预览一下你的文章，确认无误后，再在终端输入</p><pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo clean &amp;&amp; hexo d</code></pre><p>等待一会你的文章就上传完毕了，打开</p><pre><code>你的github用户名.github.io</code></pre><p>即可看到你的文章<br>在文章里有一些内容可以更改</p><ul><li>title 标题</li><li>date 日期</li><li>tags 标签</li><li>categories 分类</li></ul><blockquote><p>页面细节添加</p></blockquote><p>我的博客顶端有主页，归档和关于的按钮，要想添加这些功能需要修改<code>_config.yml</code>文件<br>打开<code>博客文件夹\theme\你的主题文件夹</code>中的<code>_config.yml</code>文件<br>以Hacker主题为例<br>修改Hacker文件夹里的<br><code>_config.example.yml</code>为<code>_config.yml</code><br>打开该文件，在顶端替换掉menu包含的内容，替换为</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">      Home: /</span><br><span class="line">      Archives: /archives</span><br><span class="line">      About: /about</span><br></pre></td></tr></table></figure><p>保存退出，打开windows终端输入</p><pre><code>hexo new page &quot;about&quot;</code></pre><p>创建关于页面，打开<code>博客文件夹\source\about</code>并修改里面的<code>index.md</code><br>在里面写 关于 的内容<br>保存并退出</p><pre><code>  hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code></pre><p>预览下，确认无误后输入</p><pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo clean &amp;&amp; hexo d</code></pre><p>顶栏添加成功</p>]]></content>
+    
+    
+    <summary type="html">永久免费的博客方案，安装过程超详细讲解（无需服务器），确定不来学？</summary>
+    
+    
+    
+    <category term="Hexo" scheme="http://example.com/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于Googletraunlock</title>
+    <link href="http://example.com/2022/12/01/%E5%85%B3%E4%BA%8EGoogletraunlock/"/>
+    <id>http://example.com/2022/12/01/%E5%85%B3%E4%BA%8EGoogletraunlock/</id>
+    <published>2022-12-01T07:25:08.000Z</published>
+    <updated>2022-12-01T09:47:05.650Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="自从谷歌翻译退出中国，chrome的翻译功能也用不了了"><a href="#自从谷歌翻译退出中国，chrome的翻译功能也用不了了" class="headerlink" title="自从谷歌翻译退出中国，chrome的翻译功能也用不了了"></a>自从谷歌翻译退出中国，chrome的翻译功能也用不了了</h2><p>网上很快有人想出了改host文件以达到修复目的<br>前不久写了一个辅助恢复的脚本，Googletraunlock，现已上传至Github，这里浅说一下使用方法<br>下载：</p><pre><code>git clone https://github.com/v1nnyawa/googletraunlock.git</code></pre><p> 目前只有win的，后续会考虑写linux的<br> 下载后双击即可，打开后会有一处地方让输入选择，选择D就好，接着回车就完工了，打开chrome试试翻译吧</p><blockquote><p>这里的恢复只是谷歌翻译功能恢复，并不是谷歌翻译的网站恢复</p></blockquote><p>如果你不想要修改了，可以用以下方法恢复</p><p>打开C盘名为googletraunlock的文件夹，把里面的hosts_backup.txt改成hosts并拖入C:\Windows\system32\drivers\etc\ 替换原hosts文件<br>再打开chrome，翻译功能又失效了</p><blockquote><p>我觉得不会有人傻到想取消吧？</p></blockquote>]]></content>
+    
+    
+    <summary type="html">自从谷歌翻译退出中国，chrome的翻译功能也用不了了</summary>
+    
+    
+    
+    <category term="bat" scheme="http://example.com/categories/bat/"/>
+    
+    
+    <category term="bat" scheme="http://example.com/tags/bat/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HelloWorld!</title>
+    <link href="http://example.com/2022/12/01/HelloWorld/"/>
+    <id>http://example.com/2022/12/01/HelloWorld/</id>
+    <published>2022-12-01T06:51:07.000Z</published>
+    <updated>2022-12-01T07:14:53.772Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>今天是2022&#x2F;12&#x2F;1，HelloWorld！<br>                                           ——V1nny</strong>        </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;strong&gt;今天是2022&amp;#x2F;12&amp;#x2F;1，HelloWorld！&lt;br&gt;                                           ——V1nny&lt;/strong&gt;
+        &lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
