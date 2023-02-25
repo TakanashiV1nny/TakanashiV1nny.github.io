@@ -145,6 +145,13 @@
       </tags>
   </entry>
   <entry>
+    <title>HelloWorld!</title>
+    <url>/2022/12/01/HelloWorld/</url>
+    <content><![CDATA[<p><strong>今天是2022&#x2F;12&#x2F;1，HelloWorld！<br>                                           ——V1nny</strong>
+        </p>
+]]></content>
+  </entry>
+  <entry>
     <title>Hexo文章加密Demo</title>
     <url>/2023/02/24/Hexo%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86Demo/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -161,11 +168,41 @@
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
   </entry>
   <entry>
-    <title>HelloWorld!</title>
-    <url>/2022/12/01/HelloWorld/</url>
-    <content><![CDATA[<p><strong>今天是2022&#x2F;12&#x2F;1，HelloWorld！<br>                                           ——V1nny</strong>
-        </p>
+    <title>Hexo配置一些必备插件</title>
+    <url>/2023/02/25/Hexo%E9%85%8D%E7%BD%AE%E4%B8%80%E4%BA%9B%E5%BF%85%E5%A4%87%E6%8F%92%E4%BB%B6/</url>
+    <content><![CDATA[<h2 id="文章加密"><a href="#文章加密" class="headerlink" title="文章加密"></a><strong>文章加密</strong></h2><p><a href="https://takanashiv1nny.github.io/2023/02/24/Hexo%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86Demo/">文章加密Demo</a><br>↑这是最终效果~~ 密码是<code>v1nny</code></p>
+<p>如果你想给你的文章设置密码，输入密码才能查看内容，方法非常简单<br>打开<code>Git Bash</code>，并且<code>cd</code>到你的博客目录，输入<br><code>cnpm install --save hexo-blog-encrypt</code><br>或<br><code>npm install --save hexo-blog-encrypt</code><br>你可以都试试，强烈推荐使用第一个（这两条命令哪个可以成功你就用哪个，没有必须的说法）<br>安装成功表现为输出</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">√ 某某某</span><br><span class="line">√ 某某某</span><br><span class="line">√ 某某某</span><br></pre></td></tr></table></figure>
+<p>总之有对勾就是成功了，还是那句话，不成功的话就试试另一个命令，如果都不行，那么请找找自己博客的问题<br>那么假设你要给一个文章加密，你总得有个文章对吧<br>输入<br><code>hexo new &quot;新文章的名字&quot;</code><br>创建一个新文章，编辑它时你会看到开头应该是这样的</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章名称</span><br><span class="line">date: 日期某某</span><br><span class="line">tags: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>在<code>tags</code>下面或者上面随便哪里都行，总之就是在—的包围里面，添加<br><code>password: </code><br>注意冒号后面要有空格<br>然后在后面写密码，假如我设置密码为<code>1234</code>就应该写</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章名称</span><br><span class="line">date: 日期某某</span><br><span class="line">tags: </span><br><span class="line">password: 1234</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>就是这样，很简单</p>
+<h2 id="文章内容展开"><a href="#文章内容展开" class="headerlink" title="文章内容展开"></a><strong>文章内容展开</strong></h2><p><a href="https://takanashiv1nny.github.io/2023/02/24/Hexo%E6%96%87%E7%AB%A0%E5%86%85%E5%B1%95%E5%BC%80%E6%8F%92%E4%BB%B6Demo/">文章内容展开Demo</a><br>↑这是最终效果~~</p>
+<p>和前面的文章加密一样，先打开<code>Git Bash</code>并<code>cd</code>到博客文件夹<br>输入<br><code>cnpm install hexo-tag-details --save</code><br>或<br><code>npm install hexo-tag-details --save</code><br>来安装插件，我仍然推荐你用第一条命令<br>安装好后，就该使用了<br>还是那句话，你总得有个文章吧，创建你的文章，并编辑<br>在正文的地方写</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% details 点击可以展开的文字 %&#125;  </span><br><span class="line">  </span><br><span class="line">展开后显示的内容  </span><br><span class="line">  </span><br><span class="line">&#123;% enddetails %&#125;</span><br></pre></td></tr></table></figure>
+<p>就这样</p>
+<details><summary>▼点击我</summary><p>你好
+  </p>
+</details>
+
+<p>直接写的话可能会只有一行字，别人并不知道他可以点击，你可以添加<br><code>▼</code>来做提示，只需要中文输入法输入<code>倒三角</code>就可以打出来了~</p>
+<h2 id="RSS和主题页面的配置"><a href="#RSS和主题页面的配置" class="headerlink" title="RSS和主题页面的配置"></a><strong>RSS和主题页面的配置</strong></h2><p>我的博客菜单栏有一个<code>订阅</code>超链接，点击它它会带你来到RSS订阅页面，下面说说如何实现这种效果<br>和前面一样，输入<br><code>cnpm install --save hexo-generator-feed</code><br>或<br><code>npm install --save hexo-generator-feed</code><br>修改你的博客配置文件<code>_config.yml</code><br>在最后一行写入</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">plugins:</span><br><span class="line">  hexo-generator-feed</span><br><span class="line">#Feed Atom</span><br><span class="line">feed:</span><br><span class="line">  type: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  limit: 20</span><br></pre></td></tr></table></figure>
+<p>保存退出<br>在你的主题配置文件<code>_config.yml</code>（这里以Hacker主题为例）里最后一行写</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># RSS</span><br><span class="line">rss: /atom.xml</span><br></pre></td></tr></table></figure>
+<p>保存退出<br>在<code>Git Bash</code>里输入<br><code>hexo g</code><br>生成页面<br>会看到显示了<br><code>Generated: atom.xml</code><br>这时直接把你的博客d到github即可<br><code>hexo d</code></p>
+<p>如果你想实现我这种超链接到rss页面可以看看以下的步骤</p>
+<p>在博客文件夹内的<code>theme</code>文件夹内找到<code>_config.yml</code><br>编辑它，在开头写</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">	订阅: /atom.xml</span><br></pre></td></tr></table></figure>
+<p>即可</p>
 ]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title>John The Ripper &amp;&amp; Crunch 破解zip密码</title>
@@ -224,73 +261,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo文章内展开插件Demo</title>
-    <url>/2023/02/24/Hexo%E6%96%87%E7%AB%A0%E5%86%85%E5%B1%95%E5%BC%80%E6%8F%92%E4%BB%B6Demo/</url>
-    <content><![CDATA[<details><summary>点击展开</summary><p>展开了<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</p>
-</details>
-]]></content>
-  </entry>
-  <entry>
-    <title>关于Googletraunlock</title>
-    <url>/2022/12/01/%E5%85%B3%E4%BA%8EGoogletraunlock/</url>
-    <content><![CDATA[<h2 id="自从谷歌翻译退出中国，chrome的翻译功能也用不了了"><a href="#自从谷歌翻译退出中国，chrome的翻译功能也用不了了" class="headerlink" title="自从谷歌翻译退出中国，chrome的翻译功能也用不了了"></a>自从谷歌翻译退出中国，chrome的翻译功能也用不了了</h2><p>网上很快有人想出了改host文件以达到修复目的<br>前不久写了一个辅助恢复的脚本，Googletraunlock，现已上传至Github，这里浅说一下使用方法<br>下载：</p>
-<pre><code>git clone https://github.com/v1nnyawa/googletraunlock.git
-</code></pre>
-<p> 目前只有win的，后续会考虑写linux的<br> 下载后双击即可，打开后会有一处地方让输入选择，选择D就好，接着回车就完工了，打开chrome试试翻译吧</p>
-<blockquote>
-<p>这里的恢复只是谷歌翻译功能恢复，并不是谷歌翻译的网站恢复</p>
-</blockquote>
-<p>如果你不想要修改了，可以用以下方法恢复</p>
-<p>打开C盘名为googletraunlock的文件夹，把里面的hosts_backup.txt改成hosts并拖入C:\Windows\system32\drivers\etc\ 替换原hosts文件<br>再打开chrome，翻译功能又失效了</p>
-<blockquote>
-<p>我觉得不会有人傻到想取消吧？</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>bat</category>
-      </categories>
-      <tags>
-        <tag>bat</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo配置一些必备插件</title>
-    <url>/2023/02/25/Hexo%E9%85%8D%E7%BD%AE%E4%B8%80%E4%BA%9B%E5%BF%85%E5%A4%87%E6%8F%92%E4%BB%B6/</url>
-    <content><![CDATA[<h2 id="文章加密"><a href="#文章加密" class="headerlink" title="文章加密"></a><strong>文章加密</strong></h2><p><a href="https://takanashiv1nny.github.io/2023/02/24/Hexo%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86Demo/">文章加密Demo</a><br>↑这是最终效果~~</p>
-<p>如果你想给你的文章设置密码，输入密码才能查看内容，方法非常简单<br>打开<code>Git Bash</code>，并且<code>cd</code>到你的博客目录，输入<br><code>cnpm install --save hexo-blog-encrypt</code><br>或<br><code>npm install --save hexo-blog-encrypt</code><br>你可以都试试，强烈推荐使用第一个（这两条命令哪个可以成功你就用哪个，没有必须的说法）<br>安装成功表现为输出</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">√ 某某某</span><br><span class="line">√ 某某某</span><br><span class="line">√ 某某某</span><br></pre></td></tr></table></figure>
-<p>总之有对勾就是成功了，还是那句话，不成功的话就试试另一个命令，如果都不行，那么请找找自己博客的问题<br>那么假设你要给一个文章加密，你总得有个文章对吧<br>输入<br><code>hexo new &quot;新文章的名字&quot;</code><br>创建一个新文章，编辑它时你会看到开头应该是这样的</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章名称</span><br><span class="line">date: 日期某某</span><br><span class="line">tags: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>在<code>tags</code>下面或者上面随便哪里都行，总之就是在—的包围里面，添加<br><code>password: </code><br>注意冒号后面要有空格<br>然后在后面写密码，假如我设置密码为<code>1234</code>就应该写</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章名称</span><br><span class="line">date: 日期某某</span><br><span class="line">tags: </span><br><span class="line">password: 1234</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>就是这样，很简单</p>
-<h2 id="文章内容展开"><a href="#文章内容展开" class="headerlink" title="文章内容展开"></a><strong>文章内容展开</strong></h2><p><a href="https://takanashiv1nny.github.io/2023/02/24/Hexo%E6%96%87%E7%AB%A0%E5%86%85%E5%B1%95%E5%BC%80%E6%8F%92%E4%BB%B6Demo/">文章内容展开Demo</a><br>↑这是最终效果~~</p>
-<p>和前面的文章加密一样，先打开<code>Git Bash</code>并<code>cd</code>到博客文件夹<br>输入<br><code>cnpm install hexo-tag-details --save</code><br>或<br><code>npm install hexo-tag-details --save</code><br>来安装插件，我仍然推荐你用第一条命令<br>安装好后，就该使用了<br>还是那句话，你总得有个文章吧，创建你的文章，并编辑<br>在正文的地方写</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% details 点击可以展开的文字 %&#125;  </span><br><span class="line">  </span><br><span class="line">展开后显示的内容  </span><br><span class="line">  </span><br><span class="line">&#123;% enddetails %&#125;</span><br></pre></td></tr></table></figure>
-<p>就这样</p>
-<details><summary>▼点击我</summary><p>你好
-  </p>
-</details>
-
-<p>直接写的话可能会只有一行字，别人并不知道他可以点击，你可以添加<br><code>▼</code>来做提示，只需要中文输入法输入<code>倒三角</code>就可以打出来了~</p>
-<h2 id="RSS和主题页面的配置"><a href="#RSS和主题页面的配置" class="headerlink" title="RSS和主题页面的配置"></a><strong>RSS和主题页面的配置</strong></h2><p>我的博客菜单栏有一个<code>订阅</code>超链接，点击它它会带你来到RSS订阅页面，下面说说如何实现这种效果<br>和前面一样，输入<br><code>cnpm install --save hexo-generator-feed</code><br>或<br><code>npm install --save hexo-generator-feed</code><br>修改你的博客配置文件<code>_config.yml</code><br>在最后一行写入</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">plugins:</span><br><span class="line">  hexo-generator-feed</span><br><span class="line">#Feed Atom</span><br><span class="line">feed:</span><br><span class="line">  type: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  limit: 20</span><br></pre></td></tr></table></figure>
-<p>保存退出<br>在你的主题配置文件<code>_config.yml</code>（这里以Hacker主题为例）里最后一行写</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># RSS</span><br><span class="line">rss: /atom.xml</span><br></pre></td></tr></table></figure>
-<p>保存退出<br>在<code>Git Bash</code>里输入<br><code>hexo g</code><br>生成页面<br>会看到显示了<br><code>Generated: atom.xml</code><br>这时直接把你的博客d到github即可<br><code>hexo d</code></p>
-<p>如果你想实现我这种超链接到rss页面可以看看以下的步骤</p>
-<p>在博客文件夹内的<code>theme</code>文件夹内找到<code>_config.yml</code><br>编辑它，在开头写</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">	订阅: /atom.xml</span><br></pre></td></tr></table></figure>
-<p>即可</p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Photoshop无缝换脸，有手就行</title>
     <url>/2022/12/05/Photoshop%E6%97%A0%E7%BC%9D%E6%8D%A2%E8%84%B8%EF%BC%8C%E6%9C%89%E6%89%8B%E5%B0%B1%E8%A1%8C/</url>
     <content><![CDATA[<p>不久前比较喜欢折腾Ps，最喜欢的玩法自然就是换脸了<br><del>我甚至因为恶搞同学被拉黑了55555</del><br>方法简单，老样子，纯文字你也可以看懂的！</p>
@@ -319,49 +289,11 @@
       </tags>
   </entry>
   <entry>
-    <title>鼠标指针？自制一个好不好！</title>
-    <url>/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/</url>
-    <content><![CDATA[<h2 id="需要准备"><a href="#需要准备" class="headerlink" title="需要准备"></a><strong>需要准备</strong></h2><ul>
-<li><p>Icofx</p>
-<p>  <a href="https://www.icofx.ro/files/icofxsetup.exe">Icofx下载</a></p>
-</li>
-<li><p>鼠标指针安装文件生成器</p>
-<p>  <a href="https://wwts.lanzouf.com/iRaZM0lm6v3e">鼠标指针安装文件生成器</a>（密码：cngd）</p>
-</li>
-<li><p>电脑（废话）</p>
-</li>
-</ul>
-<h2 id="绘制鼠标指针"><a href="#绘制鼠标指针" class="headerlink" title="绘制鼠标指针"></a><strong>绘制鼠标指针</strong></h2><p>打开<code>Icofx</code>工具，选择<code>New Cursor</code>，并点击<code>确定</code></p>
-<img src="/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/1.png" class title="image">
-<p>然后开始画就好了</p>
-<img src="/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/2.png" class title="image">
-<p>如果你不知道需要画哪些可以打开<code>鼠标指针安装文件生成器</code>，这里有参考</p>
-<img src="/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/3.png" class title="image">
-<p>全部画好后在<code>Icofx</code>按<code>Ctrl</code>+<code>Shift</code>+<code>S</code>保存到一个文件夹，文件夹名最好是你所设计的鼠标指针的名字</p>
-<blockquote>
-<p>说个可怕的事，Icofx只是试用版，正版要💴的，但是你也可以找pj版</p>
-</blockquote>
-<h2 id="打包工程"><a href="#打包工程" class="headerlink" title="打包工程"></a><strong>打包工程</strong></h2><p>打开<code>鼠标指针安装文件生成器</code>，点击指针文件夹，选择你保存鼠标文件的文件夹即可</p>
-<img src="/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/4.png" class title="image">
-<p>把对应功能的鼠标图片拖动到右边对应的框框里</p>
-<img src="/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/5.png" class title="image">
-<p>取消勾选<code>打包成EXE文件</code>，并填写<code>文件夹名称</code>和<code>指针名称</code>，最后点击<code>生成打包文件</code></p>
-<img src="/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/6.png" class title="image">
-<p>这时，返回你存储指针文件的文件夹内，指针的<code>inf</code>文件就在里面了，文件名可能是<code>AutoSetup</code>，如果不一样也没关系，可能是咱们的版本不一样，但是如果你是从我的网盘里下载的话应该版本都一样的，这时你应该找找自己的问题了</p>
-<img src="/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/7.png" class title="image">
-
-<h2 id="安装方式"><a href="#安装方式" class="headerlink" title="安装方式"></a><strong>安装方式</strong></h2><p>直接右键inf文件选择安装即可，分享给别人只需要分享inf文件</p>
-<blockquote>
-<p>如果你是win11系统，右键后请选择显示更多选项，在点击安装</p>
-</blockquote>
-<h2 id="分享"><a href="#分享" class="headerlink" title="分享"></a><strong>分享</strong></h2><p>分享一款我正在使用的仿Macos的鼠标指针<br><a href="https://wwts.lanzouf.com/iV6dv0lml01g">MacOS指针</a><br>密码:2mpu</p>
+    <title>Hexo文章内展开插件Demo</title>
+    <url>/2023/02/24/Hexo%E6%96%87%E7%AB%A0%E5%86%85%E5%B1%95%E5%BC%80%E6%8F%92%E4%BB%B6Demo/</url>
+    <content><![CDATA[<details><summary>点击展开</summary><p>展开了<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</p>
+</details>
 ]]></content>
-      <categories>
-        <category>鼠标指针</category>
-      </categories>
-      <tags>
-        <tag>鼠标指针</tag>
-      </tags>
   </entry>
   <entry>
     <title>Raspberry Pi Pico 制作 BADusb</title>
@@ -434,6 +366,74 @@
       </categories>
       <tags>
         <tag>JohnTheRipper</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于Googletraunlock</title>
+    <url>/2022/12/01/%E5%85%B3%E4%BA%8EGoogletraunlock/</url>
+    <content><![CDATA[<h2 id="自从谷歌翻译退出中国，chrome的翻译功能也用不了了"><a href="#自从谷歌翻译退出中国，chrome的翻译功能也用不了了" class="headerlink" title="自从谷歌翻译退出中国，chrome的翻译功能也用不了了"></a>自从谷歌翻译退出中国，chrome的翻译功能也用不了了</h2><p>网上很快有人想出了改host文件以达到修复目的<br>前不久写了一个辅助恢复的脚本，Googletraunlock，现已上传至Github，这里浅说一下使用方法<br>下载：</p>
+<pre><code>git clone https://github.com/v1nnyawa/googletraunlock.git
+</code></pre>
+<p> 目前只有win的，后续会考虑写linux的<br> 下载后双击即可，打开后会有一处地方让输入选择，选择D就好，接着回车就完工了，打开chrome试试翻译吧</p>
+<blockquote>
+<p>这里的恢复只是谷歌翻译功能恢复，并不是谷歌翻译的网站恢复</p>
+</blockquote>
+<p>如果你不想要修改了，可以用以下方法恢复</p>
+<p>打开C盘名为googletraunlock的文件夹，把里面的hosts_backup.txt改成hosts并拖入C:\Windows\system32\drivers\etc\ 替换原hosts文件<br>再打开chrome，翻译功能又失效了</p>
+<blockquote>
+<p>我觉得不会有人傻到想取消吧？</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>bat</category>
+      </categories>
+      <tags>
+        <tag>bat</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>鼠标指针？自制一个好不好！</title>
+    <url>/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/</url>
+    <content><![CDATA[<h2 id="需要准备"><a href="#需要准备" class="headerlink" title="需要准备"></a><strong>需要准备</strong></h2><ul>
+<li><p>Icofx</p>
+<p>  <a href="https://www.icofx.ro/files/icofxsetup.exe">Icofx下载</a></p>
+</li>
+<li><p>鼠标指针安装文件生成器</p>
+<p>  <a href="https://wwts.lanzouf.com/iRaZM0lm6v3e">鼠标指针安装文件生成器</a>（密码：cngd）</p>
+</li>
+<li><p>电脑（废话）</p>
+</li>
+</ul>
+<h2 id="绘制鼠标指针"><a href="#绘制鼠标指针" class="headerlink" title="绘制鼠标指针"></a><strong>绘制鼠标指针</strong></h2><p>打开<code>Icofx</code>工具，选择<code>New Cursor</code>，并点击<code>确定</code></p>
+<img src="/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/1.png" class title="image">
+<p>然后开始画就好了</p>
+<img src="/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/2.png" class title="image">
+<p>如果你不知道需要画哪些可以打开<code>鼠标指针安装文件生成器</code>，这里有参考</p>
+<img src="/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/3.png" class title="image">
+<p>全部画好后在<code>Icofx</code>按<code>Ctrl</code>+<code>Shift</code>+<code>S</code>保存到一个文件夹，文件夹名最好是你所设计的鼠标指针的名字</p>
+<blockquote>
+<p>说个可怕的事，Icofx只是试用版，正版要💴的，但是你也可以找pj版</p>
+</blockquote>
+<h2 id="打包工程"><a href="#打包工程" class="headerlink" title="打包工程"></a><strong>打包工程</strong></h2><p>打开<code>鼠标指针安装文件生成器</code>，点击指针文件夹，选择你保存鼠标文件的文件夹即可</p>
+<img src="/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/4.png" class title="image">
+<p>把对应功能的鼠标图片拖动到右边对应的框框里</p>
+<img src="/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/5.png" class title="image">
+<p>取消勾选<code>打包成EXE文件</code>，并填写<code>文件夹名称</code>和<code>指针名称</code>，最后点击<code>生成打包文件</code></p>
+<img src="/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/6.png" class title="image">
+<p>这时，返回你存储指针文件的文件夹内，指针的<code>inf</code>文件就在里面了，文件名可能是<code>AutoSetup</code>，如果不一样也没关系，可能是咱们的版本不一样，但是如果你是从我的网盘里下载的话应该版本都一样的，这时你应该找找自己的问题了</p>
+<img src="/2023/02/24/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%EF%BC%9F%E8%87%AA%E5%88%B6%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%B8%8D%E5%A5%BD%EF%BC%81/7.png" class title="image">
+
+<h2 id="安装方式"><a href="#安装方式" class="headerlink" title="安装方式"></a><strong>安装方式</strong></h2><p>直接右键inf文件选择安装即可，分享给别人只需要分享inf文件</p>
+<blockquote>
+<p>如果你是win11系统，右键后请选择显示更多选项，在点击安装</p>
+</blockquote>
+<h2 id="分享"><a href="#分享" class="headerlink" title="分享"></a><strong>分享</strong></h2><p>分享一款我正在使用的仿Macos的鼠标指针<br><a href="https://wwts.lanzouf.com/iV6dv0lml01g">MacOS指针</a><br>密码:2mpu</p>
+]]></content>
+      <categories>
+        <category>鼠标指针</category>
+      </categories>
+      <tags>
+        <tag>鼠标指针</tag>
       </tags>
   </entry>
 </search>
