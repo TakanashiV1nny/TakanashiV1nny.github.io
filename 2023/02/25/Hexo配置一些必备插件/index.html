@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo配置一些必备插件 | Takanashi.V1nny</title>
+
+  
+  <meta name="author" content="Takanashi.V1nny">
+  
+
+  
+  <meta name="description" content="Takanashi.V1nny&#39;s Blog">
+  
+
+  
+  <meta name="keywords" content="Takanashi.V1nny Blog Write">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="Hexo配置一些必备插件"/>
+
+  <meta property="og:site_name" content="Takanashi.V1nny"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Takanashi.V1nny" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">Takanashi.V1nny</a>
+    </h1>
+    <p class="site-description"></p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+        <li><a href="/">主页</a></li>
+      
+        <li><a href="/archives">归档</a></li>
+      
+        <li><a href="/about">关于</a></li>
+      
+        <li><a href="/atom.xml">订阅</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>Hexo配置一些必备插件</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2023/02/25/Hexo配置一些必备插件/" rel="bookmark">
+        <time class="entry-date published" datetime="2023-02-25T12:11:15.000Z">
+          2023-02-25
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <h2 id="文章加密"><a href="#文章加密" class="headerlink" title="文章加密"></a><strong>文章加密</strong></h2><p><a target="_blank" rel="noopener" href="https://takanashiv1nny.github.io/2023/02/24/Hexo%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86Demo/">文章加密Demo</a><br>↑这是最终效果~~</p>
+<p>如果你想给你的文章设置密码，输入密码才能查看内容，方法非常简单<br>打开<code>Git Bash</code>，并且<code>cd</code>到你的博客目录，输入<br><code>cnpm install --save hexo-blog-encrypt</code><br>或<br><code>npm install --save hexo-blog-encrypt</code><br>你可以都试试，强烈推荐使用第一个（这两条命令哪个可以成功你就用哪个，没有必须的说法）<br>安装成功表现为输出</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">√ 某某某</span><br><span class="line">√ 某某某</span><br><span class="line">√ 某某某</span><br></pre></td></tr></table></figure>
+<p>总之有对勾就是成功了，还是那句话，不成功的话就试试另一个命令，如果都不行，那么请找找自己博客的问题<br>那么假设你要给一个文章加密，你总得有个文章对吧<br>输入<br><code>hexo new &quot;新文章的名字&quot;</code><br>创建一个新文章，编辑它时你会看到开头应该是这样的</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章名称</span><br><span class="line">date: 日期某某</span><br><span class="line">tags: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>在<code>tags</code>下面或者上面随便哪里都行，总之就是在—的包围里面，添加<br><code>password: </code><br>注意冒号后面要有空格<br>然后在后面写密码，假如我设置密码为<code>1234</code>就应该写</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章名称</span><br><span class="line">date: 日期某某</span><br><span class="line">tags: </span><br><span class="line">password: 1234</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>就是这样，很简单</p>
+<h2 id="文章内容展开"><a href="#文章内容展开" class="headerlink" title="文章内容展开"></a><strong>文章内容展开</strong></h2><p><a target="_blank" rel="noopener" href="https://takanashiv1nny.github.io/2023/02/24/Hexo%E6%96%87%E7%AB%A0%E5%86%85%E5%B1%95%E5%BC%80%E6%8F%92%E4%BB%B6Demo/">文章内容展开Demo</a><br>↑这是最终效果~~</p>
+<p>和前面的文章加密一样，先打开<code>Git Bash</code>并<code>cd</code>到博客文件夹<br>输入<br><code>cnpm install hexo-tag-details --save</code><br>或<br><code>npm install hexo-tag-details --save</code><br>来安装插件，我仍然推荐你用第一条命令<br>安装好后，就该使用了<br>还是那句话，你总得有个文章吧，创建你的文章，并编辑<br>在正文的地方写</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% details 点击可以展开的文字 %&#125;  </span><br><span class="line">  </span><br><span class="line">展开后显示的内容  </span><br><span class="line">  </span><br><span class="line">&#123;% enddetails %&#125;</span><br></pre></td></tr></table></figure>
+<p>就这样</p>
+<details><summary>▼点击我</summary><p>你好
+  </p>
+</details>
+
+<p>直接写的话可能会只有一行字，别人并不知道他可以点击，你可以添加<br><code>▼</code>来做提示，只需要中文输入法输入<code>倒三角</code>就可以打出来了~</p>
+<h2 id="RSS和主题页面的配置"><a href="#RSS和主题页面的配置" class="headerlink" title="RSS和主题页面的配置"></a><strong>RSS和主题页面的配置</strong></h2><p>我的博客菜单栏有一个<code>订阅</code>超链接，点击它它会带你来到RSS订阅页面，下面说说如何实现这种效果<br>和前面一样，输入<br><code>cnpm install --save hexo-generator-feed</code><br>或<br><code>npm install --save hexo-generator-feed</code><br>修改你的博客配置文件<code>_config.yml</code><br>在最后一行写入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">plugins:</span><br><span class="line">  hexo-generator-feed</span><br><span class="line">#Feed Atom</span><br><span class="line">feed:</span><br><span class="line">  type: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  limit: 20</span><br></pre></td></tr></table></figure>
+<p>保存退出<br>在你的主题配置文件<code>_config.yml</code>（这里以Hacker主题为例）里最后一行写</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># RSS</span><br><span class="line">rss: /atom.xml</span><br></pre></td></tr></table></figure>
+<p>保存退出<br>在<code>Git Bash</code>里输入<br><code>hexo g</code><br>生成页面<br>会看到显示了<br><code>Generated: atom.xml</code><br>这时直接把你的博客d到github即可<br><code>hexo d</code></p>
+<p>如果你想实现我这种超链接到rss页面可以看看以下的步骤</p>
+<p>在博客文件夹内的<code>theme</code>文件夹内找到<code>_config.yml</code><br>编辑它，在开头写</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">	订阅: /atom.xml</span><br></pre></td></tr></table></figure>
+<p>即可</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+      
+
+    <span class="post-categories">
+      <i class="icon-categories"></i>
+        <a href="/categories/Hexo/">Hexo</a>
+    </span>
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/Hexo/">Hexo</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+  
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date(); 
+    function createtime() { 
+        var grt= new Date("12/01/2022 17:38:00");//在此处修改你的建站时间，格式：月/日/年 时:分:秒
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+    } 
+setInterval("createtime()",250);
+</script>
+    </br>
+    
+    &copy; 2023 Takanashi.V1nny
+    
+  
+  </p>
+</footer>
+    
+    
+  </div>
+</div>
+</body>
+</html>
