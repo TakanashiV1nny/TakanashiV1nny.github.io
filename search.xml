@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo文章加密Demo</title>
+    <url>/2023/02/24/Hexo%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86Demo/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="5a9b250bca09d9bb70f2171320fe19a0ce9bc6ec3335184db2d8e24b6d4a4fdd">043054a9e2b1570e8e69b4af24e5ac8d8020bc30468e951cac8987a9fdcc2392eed41edee9a4f89c3d1a36c19abf5c87234b8e26f089cc2a46f2c19dc22273ae7e9fead0d30489e2fdeebdc963ccdb8e85af0994ea82b5ba7e62cb408e99ab416fa81d2b2fab4098e4b022f760331ce8</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+  </entry>
+  <entry>
     <title>Hexo文章内展开插件Demo</title>
     <url>/2023/02/24/Hexo%E6%96%87%E7%AB%A0%E5%86%85%E5%B1%95%E5%BC%80%E6%8F%92%E4%BB%B6Demo/</url>
     <content><![CDATA[<details><summary>点击展开</summary><p>展开了<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</p>
@@ -159,73 +175,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Hexo文章加密Demo</title>
-    <url>/2023/02/24/Hexo%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86Demo/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="5a9b250bca09d9bb70f2171320fe19a0ce9bc6ec3335184db2d8e24b6d4a4fdd">043054a9e2b1570e8e69b4af24e5ac8d8020bc30468e951cac8987a9fdcc2392eed41edee9a4f89c3d1a36c19abf5c87234b8e26f089cc2a46f2c19dc22273ae7e9fead0d30489e2fdeebdc963ccdb8e85af0994ea82b5ba7e62cb408e99ab416fa81d2b2fab4098e4b022f760331ce8</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-  </entry>
-  <entry>
-    <title>Photoshop无缝换脸，有手就行</title>
-    <url>/2022/12/05/Photoshop%E6%97%A0%E7%BC%9D%E6%8D%A2%E8%84%B8%EF%BC%8C%E6%9C%89%E6%89%8B%E5%B0%B1%E8%A1%8C/</url>
-    <content><![CDATA[<p>不久前比较喜欢折腾Ps，最喜欢的玩法自然就是换脸了<br><del>我甚至因为恶搞同学被拉黑了55555</del><br>方法简单，老样子，纯文字你也可以看懂的！</p>
-<blockquote>
-<p>需要准备</p>
-</blockquote>
-<ul>
-<li>电脑（废话）</li>
-<li>Photoshop（版本别太老就行）<br>网上有很多ρj，怕不安全的话可以去pdd弄一个，但最好还是支持正版（不是恰饭啊）</li>
-<li>至少两张图片，不是人也行（bushi</li>
-</ul>
-<blockquote>
-<p>具体过程</p>
-</blockquote>
-<p>打开Ps，导入两张图片<br>这里定<code>换的脸</code>为<code>A</code>   <code>被换脸的人</code>为<code>B</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#!/usr/bin/python3</span><br><span class="line">A = ”换的脸&quot;</span><br><span class="line">B = “被换脸的人“</span><br></pre></td></tr></table></figure>
-<p>差不多就这么个意思，这样只是方便接下来的教学<br>好的，导入好图片以后，切换到<code>A</code>图<br>是用<code>钢笔工具</code>扣出脸，使用钢笔工具左键点击，在脸上构建几个描点，记住，这里扣的是脸，不是整个头，然后连接描点，在弯曲的地方左键，并按住<code>Ctrl</code>键，上下拉动鼠标，你会发现那条线动了起来，把他调整到可以贴和脸的位置<br>如果你觉得钢笔工具麻烦的话可以直接用<code>套索工具</code>左键，像画画一样圈一下就好<br>全好后按下<code>Enter</code>，然后会出现闪烁的虚线，<code>Ctrl</code>+<code>J</code>复制，并在工具栏选择<code>移动工具</code>，拖动刚才的选区到<code>B</code>图（上边会有两个任务窗口，拖到另一个的位置等待一会，等切换到<code>B</code>图在松手）<br><code>Ctrl</code>+<code>T</code>调整大小和位置</p>
-<hr>
-<p>在右下角按住<code>Ctrl</code>键并点击<code>图层2</code>，这时会出现闪烁的虚线，点击<code>图层2</code>左侧的小眼睛，将其关闭，点击上方栏中的<code>选择（S）</code>并选择<code>修改</code>→<code>收缩</code>，输入<code>5</code>点击确定<br>点击右下角<code>图层2</code>左侧的小眼睛，打开它，并双击<code>图层1</code>将其解锁，按住<code>Ctrl</code>键同时选择<code>图层1</code>和<code>图层2</code>点击上方栏中的<code>编辑</code>→<code>自动混合图层</code>，勾选全景图、无缝色调和颜色、内容识别填充透明区域，点击<code>确定</code><br>完成！<br>导出看看吧</p>
-]]></content>
-      <categories>
-        <category>photoshop</category>
-      </categories>
-      <tags>
-        <tag>photoshop</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于Googletraunlock</title>
-    <url>/2022/12/01/%E5%85%B3%E4%BA%8EGoogletraunlock/</url>
-    <content><![CDATA[<h2 id="自从谷歌翻译退出中国，chrome的翻译功能也用不了了"><a href="#自从谷歌翻译退出中国，chrome的翻译功能也用不了了" class="headerlink" title="自从谷歌翻译退出中国，chrome的翻译功能也用不了了"></a>自从谷歌翻译退出中国，chrome的翻译功能也用不了了</h2><p>网上很快有人想出了改host文件以达到修复目的<br>前不久写了一个辅助恢复的脚本，Googletraunlock，现已上传至Github，这里浅说一下使用方法<br>下载：</p>
-<pre><code>git clone https://github.com/v1nnyawa/googletraunlock.git
-</code></pre>
-<p> 目前只有win的，后续会考虑写linux的<br> 下载后双击即可，打开后会有一处地方让输入选择，选择D就好，接着回车就完工了，打开chrome试试翻译吧</p>
-<blockquote>
-<p>这里的恢复只是谷歌翻译功能恢复，并不是谷歌翻译的网站恢复</p>
-</blockquote>
-<p>如果你不想要修改了，可以用以下方法恢复</p>
-<p>打开C盘名为googletraunlock的文件夹，把里面的hosts_backup.txt改成hosts并拖入C:\Windows\system32\drivers\etc\ 替换原hosts文件<br>再打开chrome，翻译功能又失效了</p>
-<blockquote>
-<p>我觉得不会有人傻到想取消吧？</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>bat</category>
-      </categories>
-      <tags>
-        <tag>bat</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo配置一些必备插件</title>
     <url>/2023/02/25/Hexo%E9%85%8D%E7%BD%AE%E4%B8%80%E4%BA%9B%E5%BF%85%E5%A4%87%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<h2 id="文章加密"><a href="#文章加密" class="headerlink" title="文章加密"></a><strong>文章加密</strong></h2><p><a href="https://takanashiv1nny.github.io/2023/02/24/Hexo%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86Demo/">文章加密Demo</a><br>↑这是最终效果~~ 密码是<code>v1nny</code></p>
@@ -260,6 +209,34 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Photoshop无缝换脸，有手就行</title>
+    <url>/2022/12/05/Photoshop%E6%97%A0%E7%BC%9D%E6%8D%A2%E8%84%B8%EF%BC%8C%E6%9C%89%E6%89%8B%E5%B0%B1%E8%A1%8C/</url>
+    <content><![CDATA[<p>不久前比较喜欢折腾Ps，最喜欢的玩法自然就是换脸了<br><del>我甚至因为恶搞同学被拉黑了55555</del><br>方法简单，老样子，纯文字你也可以看懂的！</p>
+<blockquote>
+<p>需要准备</p>
+</blockquote>
+<ul>
+<li>电脑（废话）</li>
+<li>Photoshop（版本别太老就行）<br>网上有很多ρj，怕不安全的话可以去pdd弄一个，但最好还是支持正版（不是恰饭啊）</li>
+<li>至少两张图片，不是人也行（bushi</li>
+</ul>
+<blockquote>
+<p>具体过程</p>
+</blockquote>
+<p>打开Ps，导入两张图片<br>这里定<code>换的脸</code>为<code>A</code>   <code>被换脸的人</code>为<code>B</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#!/usr/bin/python3</span><br><span class="line">A = ”换的脸&quot;</span><br><span class="line">B = “被换脸的人“</span><br></pre></td></tr></table></figure>
+<p>差不多就这么个意思，这样只是方便接下来的教学<br>好的，导入好图片以后，切换到<code>A</code>图<br>是用<code>钢笔工具</code>扣出脸，使用钢笔工具左键点击，在脸上构建几个描点，记住，这里扣的是脸，不是整个头，然后连接描点，在弯曲的地方左键，并按住<code>Ctrl</code>键，上下拉动鼠标，你会发现那条线动了起来，把他调整到可以贴和脸的位置<br>如果你觉得钢笔工具麻烦的话可以直接用<code>套索工具</code>左键，像画画一样圈一下就好<br>全好后按下<code>Enter</code>，然后会出现闪烁的虚线，<code>Ctrl</code>+<code>J</code>复制，并在工具栏选择<code>移动工具</code>，拖动刚才的选区到<code>B</code>图（上边会有两个任务窗口，拖到另一个的位置等待一会，等切换到<code>B</code>图在松手）<br><code>Ctrl</code>+<code>T</code>调整大小和位置</p>
+<hr>
+<p>在右下角按住<code>Ctrl</code>键并点击<code>图层2</code>，这时会出现闪烁的虚线，点击<code>图层2</code>左侧的小眼睛，将其关闭，点击上方栏中的<code>选择（S）</code>并选择<code>修改</code>→<code>收缩</code>，输入<code>5</code>点击确定<br>点击右下角<code>图层2</code>左侧的小眼睛，打开它，并双击<code>图层1</code>将其解锁，按住<code>Ctrl</code>键同时选择<code>图层1</code>和<code>图层2</code>点击上方栏中的<code>编辑</code>→<code>自动混合图层</code>，勾选全景图、无缝色调和颜色、内容识别填充透明区域，点击<code>确定</code><br>完成！<br>导出看看吧</p>
+]]></content>
+      <categories>
+        <category>photoshop</category>
+      </categories>
+      <tags>
+        <tag>photoshop</tag>
       </tags>
   </entry>
   <entry>
@@ -307,6 +284,29 @@
       </tags>
   </entry>
   <entry>
+    <title>关于Googletraunlock</title>
+    <url>/2022/12/01/%E5%85%B3%E4%BA%8EGoogletraunlock/</url>
+    <content><![CDATA[<h2 id="自从谷歌翻译退出中国，chrome的翻译功能也用不了了"><a href="#自从谷歌翻译退出中国，chrome的翻译功能也用不了了" class="headerlink" title="自从谷歌翻译退出中国，chrome的翻译功能也用不了了"></a>自从谷歌翻译退出中国，chrome的翻译功能也用不了了</h2><p>网上很快有人想出了改host文件以达到修复目的<br>前不久写了一个辅助恢复的脚本，Googletraunlock，现已上传至Github，这里浅说一下使用方法<br>下载：</p>
+<pre><code>git clone https://github.com/v1nnyawa/googletraunlock.git
+</code></pre>
+<p> 目前只有win的，后续会考虑写linux的<br> 下载后双击即可，打开后会有一处地方让输入选择，选择D就好，接着回车就完工了，打开chrome试试翻译吧</p>
+<blockquote>
+<p>这里的恢复只是谷歌翻译功能恢复，并不是谷歌翻译的网站恢复</p>
+</blockquote>
+<p>如果你不想要修改了，可以用以下方法恢复</p>
+<p>打开C盘名为googletraunlock的文件夹，把里面的hosts_backup.txt改成hosts并拖入C:\Windows\system32\drivers\etc\ 替换原hosts文件<br>再打开chrome，翻译功能又失效了</p>
+<blockquote>
+<p>我觉得不会有人傻到想取消吧？</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>bat</category>
+      </categories>
+      <tags>
+        <tag>bat</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>新Bing申请</title>
     <url>/2023/03/04/%E6%96%B0Bing%E7%94%B3%E8%AF%B7/</url>
     <content><![CDATA[<p>最近Bing进行了一次大更新，内置了ChatGPT可以让搜索更智能（真的吗。。。<br>写篇博客记录下过程，也留做一个纪念吧</p>
@@ -333,35 +333,6 @@
       </categories>
       <tags>
         <tag>Bing</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>追加内容 JohnTheRipper的windows版下载及使用</title>
-    <url>/2022/12/14/%E8%BF%BD%E5%8A%A0%E5%86%85%E5%AE%B9-JohnTheRipper%E7%9A%84windows%E7%89%88%E4%B8%8B%E8%BD%BD%E5%8F%8A%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<p>有的人可能没有kali机器啊，今天补一篇教大家用windows下载john破解zip</p>
-<blockquote>
-<p>需要准备</p>
-</blockquote>
-<ul>
-<li>Windows</li>
-<li>JohnTheRipper的其他系统版本</li>
-<li>一个待破解的zip包</li>
-</ul>
-<p>首先需要下载你系统对应的版本<br><a href="https://www.openwall.com/john/">John官网</a><br>你可以在这里找到对应版本，但是不要下载john，要下载john的jumbo版，这个版本貌似是社区开发，里面包含了许多破解其他密码的模块插件等<br><a href="https://www.openwall.com/john/k/john-1.9.0-jumbo-1-win64.zip">Win64</a><br><a href="https://www.openwall.com/john/k/john-1.9.0-jumbo-1-win32.zip">Win32</a><br>下载好后应该是一个zip包，解压他，把它放到你能找到的地方，这里建议<br><code>最好不要放在桌面</code><br>可以放在D:盘<br>解压他到一个文件夹，这个文件夹命名为<code>john</code></p>
-<blockquote>
-<p>开始破解</p>
-</blockquote>
-<p>这里需要停一下，如果你没看过我写的那篇kali破解的教程，请务必去看一下，因为破解过程和kali没什么区别<br><a href="https://v1nnyawa.github.io/2022/12/13/John-The-Ripper-Crunch-%E7%A0%B4%E8%A7%A3zip%E5%AF%86%E7%A0%81/">Kali破解zip包教程</a><br>好的，在你看完那篇教程之后可以开始使用Windows破解了<br>把你待破解的<code>zip</code>包拖到john文件夹的<code>run</code>目录下，那里面有很多文件，所以在拖动前请给你的zip包起一个显眼的名字，如果你能找到，不起也可以<br>右键打开终端<br>输入</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">zip2john.exe 你的zip包名 &gt; 解析后的hash文件名.hash</span><br></pre></td></tr></table></figure>
-<p>这里你会发现，其实和kali没啥区别，只是在zip2john后加上<code>.exe</code>而已<br>执行后会在<code>run</code>目录生成一个和你输入的解析后的hash文件名同名的文件，那就是存储该zip包hash值的文件<br>输入</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">john.exe 解析后的hash文件名.hash</span><br></pre></td></tr></table></figure>
-<p>等待一会，密码应该可以出来（弱密码的情况下）<br>密码强一点的同理，和在kali一样，需要一个强大的字典，你也可以通过安装<code>crunch</code>来达到生成字典的目的，引用字典的方法和kali也一样，这里不过多赘述</p>
-]]></content>
-      <categories>
-        <category>JohnTheRipper</category>
-      </categories>
-      <tags>
-        <tag>JohnTheRipper</tag>
       </tags>
   </entry>
   <entry>
@@ -418,6 +389,35 @@
       </categories>
       <tags>
         <tag>Kali</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>追加内容 JohnTheRipper的windows版下载及使用</title>
+    <url>/2022/12/14/%E8%BF%BD%E5%8A%A0%E5%86%85%E5%AE%B9-JohnTheRipper%E7%9A%84windows%E7%89%88%E4%B8%8B%E8%BD%BD%E5%8F%8A%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<p>有的人可能没有kali机器啊，今天补一篇教大家用windows下载john破解zip</p>
+<blockquote>
+<p>需要准备</p>
+</blockquote>
+<ul>
+<li>Windows</li>
+<li>JohnTheRipper的其他系统版本</li>
+<li>一个待破解的zip包</li>
+</ul>
+<p>首先需要下载你系统对应的版本<br><a href="https://www.openwall.com/john/">John官网</a><br>你可以在这里找到对应版本，但是不要下载john，要下载john的jumbo版，这个版本貌似是社区开发，里面包含了许多破解其他密码的模块插件等<br><a href="https://www.openwall.com/john/k/john-1.9.0-jumbo-1-win64.zip">Win64</a><br><a href="https://www.openwall.com/john/k/john-1.9.0-jumbo-1-win32.zip">Win32</a><br>下载好后应该是一个zip包，解压他，把它放到你能找到的地方，这里建议<br><code>最好不要放在桌面</code><br>可以放在D:盘<br>解压他到一个文件夹，这个文件夹命名为<code>john</code></p>
+<blockquote>
+<p>开始破解</p>
+</blockquote>
+<p>这里需要停一下，如果你没看过我写的那篇kali破解的教程，请务必去看一下，因为破解过程和kali没什么区别<br><a href="https://v1nnyawa.github.io/2022/12/13/John-The-Ripper-Crunch-%E7%A0%B4%E8%A7%A3zip%E5%AF%86%E7%A0%81/">Kali破解zip包教程</a><br>好的，在你看完那篇教程之后可以开始使用Windows破解了<br>把你待破解的<code>zip</code>包拖到john文件夹的<code>run</code>目录下，那里面有很多文件，所以在拖动前请给你的zip包起一个显眼的名字，如果你能找到，不起也可以<br>右键打开终端<br>输入</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">zip2john.exe 你的zip包名 &gt; 解析后的hash文件名.hash</span><br></pre></td></tr></table></figure>
+<p>这里你会发现，其实和kali没啥区别，只是在zip2john后加上<code>.exe</code>而已<br>执行后会在<code>run</code>目录生成一个和你输入的解析后的hash文件名同名的文件，那就是存储该zip包hash值的文件<br>输入</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">john.exe 解析后的hash文件名.hash</span><br></pre></td></tr></table></figure>
+<p>等待一会，密码应该可以出来（弱密码的情况下）<br>密码强一点的同理，和在kali一样，需要一个强大的字典，你也可以通过安装<code>crunch</code>来达到生成字典的目的，引用字典的方法和kali也一样，这里不过多赘述</p>
+]]></content>
+      <categories>
+        <category>JohnTheRipper</category>
+      </categories>
+      <tags>
+        <tag>JohnTheRipper</tag>
       </tags>
   </entry>
   <entry>
